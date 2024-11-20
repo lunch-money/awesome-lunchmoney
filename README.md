@@ -25,7 +25,7 @@ DISCLAIMER: The projects listed here are built and maintained by members of the 
   - [Open Source Mobile Apps](#open-source-mobile-apps)
   - [Transaction Import Tools](#transaction-import-tools)
   - [Transaction Update Tools](#transaction-update-tools)
-  - [Notifiers and Widgets](#notifiers-and-widgets)
+  - [Notifiers, Widgets and Bots](#notifiers-widgets-and-bots)
   - [Asset Value and Balance Update Tools](#asset-value-and-balance-update-tools)
   - [Keyboard Shortcuts](#keyboard-shortcuts)
   - [Non Open Source](#non-open-source)
@@ -63,15 +63,17 @@ DISCLAIMER: The projects listed here are built and maintained by members of the 
 * [lunchmoney-fintoc-sync: Rust CLI to sync Fintoc-aggregated transactions with Lunch Money (for the Chilean bank system)](https://github.com/agucova/lunchmoney-fintoc-sync) - (by Agustín Covarrubias).
 * [lunchable-splitlunch: LunchMoney + Splitwise Integration](https://github.com/juftin/lunchable-splitlunch) - import transactions from [Splitwise](https://www.splitwise.com/) - (by Justin Flannery).
 * [Lunch-Money-Shortcuts: Shortcuts to use interact with Lunch Money from your iPhone](https://github.com/patrontheo/Lunch-Money-Shortcuts) - import transaction via an iOS Shortcut - (by Theo Patron).
+* [td-lunchmoney-importer: Imports a TD QFX multi-account file directly to Lunch Money](https://github.com/thehedgefrog/td-lunchmoney-importer) - (by )
 
 ## Transaction Update Tools
 * [lunchmoney-amazon: Categorize, and add order numbers, to Amazon transactions in LunchMoney](https://github.com/iloveitaly/lunchmoney-amazon) - for javascript fans (by Michael Bianco).
 * [lunchable-primelunch: LunchMoney Amazon Transaction Updater](https://github.com/juftin/lunchable-primelunch) - for python fans (by Justin Flannery).
 
 
-## Notifiers and Widgets
+## Notifiers, Widgets and Bots
 * [lunch-money-widget: An iOS Widget for LunchMoney Statuses](https://github.com/berndsalewski/lunch-money-widget) - Overview at a glance - (by Bernd Salewski).
 * [LunchMoneyBudgetNotifier: Uses the Lunch Money API to Retrieve the Current Credit Card Balances and send a Push Notification on Change](https://github.com/jameshansen/LunchMoneyBudgetNotifier) - up to the minute budget updates - (by James Hansen).
+* [lonchera - Lunch Money Telegram Bot - sourcehut git](https://git.sr.ht/~knur/lonchera/) - A Telegram bot that notifies users of new transactions with tools to view and manage budgets.
 
 ## Asset Value and Balance Update Tools
 * [lunchmoney-t212](https://github.com/alinalihassan/lunchmoney-t212) - Synchronize Transaction212 Investment values with Lunch Money - (by Alin Ali Hassan).
