@@ -5,7 +5,7 @@
 </a>
 
 
-A curated list of [Lunch Money Developer Resources](https://lunchmoney.dev), inspired by [awesome-go](https://github.com/avelino/awesome-go) and [awesome-python](https://github.com/vinta/awesome-python).   This collection is primarily for Open Source applications, but we also include some well loved closed source resources at the end.
+A curated list of [Lunch Money Developer](https://lunchmoney.dev) resources and generally cool apps, inspired by [awesome-go](https://github.com/avelino/awesome-go) and [awesome-python](https://github.com/vinta/awesome-python).   This collection is primarily for Open Source applications, but we also include some well loved closed source resources at the end.
 
 ### Contributing
 
@@ -27,6 +27,7 @@ DISCLAIMER: The projects listed here are built and maintained by members of the 
   - [Transaction Update Tools](#transaction-update-tools)
   - [Notifiers, Widgets and Bots](#notifiers-widgets-and-bots)
   - [Asset Value and Balance Update Tools](#asset-value-and-balance-update-tools)
+  - [Visualization Tools](#visualization-tools)
   - [Keyboard Shortcuts](#keyboard-shortcuts)
   - [Non Open Source](#non-open-source)
     - [Mobile Apps](#mobile-apps)
@@ -78,6 +79,9 @@ DISCLAIMER: The projects listed here are built and maintained by members of the 
 ## Asset Value and Balance Update Tools
 * [lunchmoney-t212](https://github.com/alinalihassan/lunchmoney-t212) - Synchronize Transaction212 Investment values with Lunch Money - (by Alin Ali Hassan).
 * [lunchmoney-assets: Update Real Estate & Car Values in LunchMoney](https://github.com/iloveitaly/lunchmoney-assets) - (by Michael Bianco).
+
+## Visualization Tools
+* [lunch-sankey: Generate Sankey Diagrams from Lunch Money Transactions](https://github.com/aneeshd16/lunch-sankey) - [Try it!](https://lunch-sankey.vercel.app/) - (by Aneesh Devasthale)
 
 ## Keyboard Shortcuts
 * [moneymover: A Chrome extension designed to give superpowers to Lunch Money](https://github.com/adamtaylor13/moneymover) - keyboard shortcuts for Lunch Money - (by Adam Taylor)
