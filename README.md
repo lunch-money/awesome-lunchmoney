@@ -1,8 +1,12 @@
 # Awesome Lunch Money 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-<a href=" https://discord.gg/vSz6jjZuj8">
+<!-- <a href=" https://discord.gg/vSz6jjZuj8">
     <img src="https://img.shields.io/discord/707079246388133940.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2" alt="Discord">
-</a>
+</a> -->
+<!-- <a href="https://discord.gg/vSz6jjZuj8">
+    <img src="https://img.shields.io/discord/842337014556262411?label=Discord&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2" alt="Discord">
+</a> -->
+
 
 
 A curated list of [Lunch Money Developer](https://lunchmoney.dev) resources and generally cool apps, inspired by [awesome-go](https://github.com/avelino/awesome-go) and [awesome-python](https://github.com/vinta/awesome-python).   This collection is primarily for Open Source applications, but we also include some well loved closed source resources at the end.
@@ -64,7 +68,8 @@ DISCLAIMER: The projects listed here are built and maintained by members of the 
 * [lunchmoney-fintoc-sync: Rust CLI to sync Fintoc-aggregated transactions with Lunch Money (for the Chilean bank system)](https://github.com/agucova/lunchmoney-fintoc-sync) - (by Agustín Covarrubias).
 * [lunchable-splitlunch: LunchMoney + Splitwise Integration](https://github.com/juftin/lunchable-splitlunch) - import transactions from [Splitwise](https://www.splitwise.com/) - (by Justin Flannery).
 * [Lunch-Money-Shortcuts: Shortcuts to use interact with Lunch Money from your iPhone](https://github.com/patrontheo/Lunch-Money-Shortcuts) - import transaction via an iOS Shortcut - (by Theo Patron).
-* [td-lunchmoney-importer: Imports a TD QFX multi-account file directly to Lunch Money](https://github.com/thehedgefrog/td-lunchmoney-importer) - (by )
+* [td-lunchmoney-importer: Imports a TD QFX multi-account file directly to Lunch Money](https://github.com/thehedgefrog/td-lunchmoney-importer) - (by Max).
+* [LunchSync: Sync Apple Wallet transactions to Lunch Money](https://github.com/milanave/LunchSync) - Available on [Test Flight](https://testflight.apple.com/join/mF8JEHqk) - (by LittleBlueBug).
 
 ## Transaction Update Tools
 * [lunchmoney-amazon: Categorize, and add order numbers, to Amazon transactions in LunchMoney](https://github.com/iloveitaly/lunchmoney-amazon) - for javascript fans (by Michael Bianco).
@@ -92,8 +97,6 @@ The following projects are not open source, but many Lunch Money users find them
 
 ### Mobile Apps
 * [BrunchMoney on the App Store](https://apps.apple.com/us/app/brunchmoney/id6504777580) an iOS app for Lunch Money - (by Nicholas Lusskin).
-* Lunch Money Pal - an iOS app available via Test Flight - (by Wilson Plau).
-  * Request via [Lunch Money Pal Discord Thread](https://discord.com/channels/842337014556262411/1237256446786277478)
 
 ### Transaction Import Tools
 * [LunchFlow - Effortlessly connect your EU and UK bank accounts to Lunch Money](https://www.lunchflow.app/) - (by Amr Awad)
