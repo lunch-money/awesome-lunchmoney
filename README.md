@@ -69,6 +69,7 @@ DISCLAIMER: The projects listed here are built and maintained by members of the 
 * [lunchable-splitlunch: LunchMoney + Splitwise Integration](https://github.com/juftin/lunchable-splitlunch) - import transactions from [Splitwise](https://www.splitwise.com/) - (by Justin Flannery).
 * [Lunch-Money-Shortcuts: Shortcuts to use interact with Lunch Money from your iPhone](https://github.com/patrontheo/Lunch-Money-Shortcuts) - import transaction via an iOS Shortcut - (by Theo Patron).
 * [td-lunchmoney-importer: Imports a TD QFX multi-account file directly to Lunch Money](https://github.com/thehedgefrog/td-lunchmoney-importer) - (by Max).
+* [lunchsimple](https://sr.ht/~colbyhub/lunchsimple/) - Import Wealthsimple activity into Lunch Money budgets - (by Colby Hubscher)
 * [LunchSync: Sync Apple Wallet transactions to Lunch Money](https://github.com/milanave/LunchSync) - Available on [Test Flight](https://testflight.apple.com/join/mF8JEHqk) - (by LittleBlueBug).
 
 ## Transaction Update Tools
