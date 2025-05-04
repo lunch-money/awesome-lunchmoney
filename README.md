@@ -74,7 +74,7 @@ DISCLAIMER: The projects listed here are built and maintained by members of the 
 ## Notifiers, Widgets and Bots
 * [lunch-money-widget: An iOS Widget for LunchMoney Statuses](https://github.com/berndsalewski/lunch-money-widget) - Overview at a glance - (by Bernd Salewski).
 * [LunchMoneyBudgetNotifier: Uses the Lunch Money API to Retrieve the Current Credit Card Balances and send a Push Notification on Change](https://github.com/jameshansen/LunchMoneyBudgetNotifier) - up to the minute budget updates - (by James Hansen).
-* [lonchera - Lunch Money Telegram Bot - sourcehut git](https://git.sr.ht/~knur/lonchera/) - A Telegram bot that notifies users of new transactions with tools to view and manage budgets.
+* [lonchera - Lunch Money Telegram Bot]([casidiablo/lonchera: Lunch Money Telegram bot](https://github.com/casidiablo/lonchera)) - A Telegram bot that notifies users of new transactions with tools to view and manage budgets.  Includes optional AI powered transaction categorization - (by Cristian Knur)
 
 ## Asset Value and Balance Update Tools
 * [lunchmoney-t212](https://github.com/alinalihassan/lunchmoney-t212) - Synchronize Transaction212 Investment values with Lunch Money - (by Alin Ali Hassan).
