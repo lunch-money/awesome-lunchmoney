@@ -1,12 +1,6 @@
 # Awesome Lunch Money 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-<!-- <a href=" https://discord.gg/vSz6jjZuj8">
-    <img src="https://img.shields.io/discord/707079246388133940.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2" alt="Discord">
-</a> -->
-<!-- <a href="https://discord.gg/vSz6jjZuj8">
-    <img src="https://img.shields.io/discord/842337014556262411?label=Discord&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2" alt="Discord">
-</a> -->
-
+[![Discord](https://img.shields.io/discord/842337014556262411?label=Discord&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://lunchmoney.app/discord)
 
 
 A curated list of [Lunch Money Developer](https://lunchmoney.dev) resources and generally cool apps, inspired by [awesome-go](https://github.com/avelino/awesome-go) and [awesome-python](https://github.com/vinta/awesome-python).   This collection is primarily for Open Source applications, but we also include some well loved closed source resources at the end.
@@ -32,9 +26,9 @@ DISCLAIMER: The projects listed here are built and maintained by members of the 
   - [Notifiers, Widgets and Bots](#notifiers-widgets-and-bots)
   - [Asset Value and Balance Update Tools](#asset-value-and-balance-update-tools)
   - [Visualization Tools](#visualization-tools)
-  - [Keyboard Shortcuts](#keyboard-shortcuts)
+  - [Keyboard Shortcuts and Browser Extensions for Lunch Money](#keyboard-shortcuts-and-browser-extensions-for-lunch-money)
+  - [AI Powered Virtual Financial Coach](#ai-powered-virtual-financial-coach)
   - [Non Open Source](#non-open-source)
-    - [Mobile Apps](#mobile-apps)
     - [Transaction Import Tools](#transaction-import-tools-1)
 
 ## Client SDKs and Language Specific API Wrappers
@@ -88,19 +82,21 @@ DISCLAIMER: The projects listed here are built and maintained by members of the 
 
 ## Visualization Tools
 * [lunch-sankey: Generate Sankey Diagrams from Lunch Money Transactions](https://github.com/aneeshd16/lunch-sankey) - [Try it!](https://lunch-sankey.vercel.app/) - (by Aneesh Devasthale)
+* [Lunch Money plugin for TRMNL an e-ink dashboard on github](https://github.com/usetrmnl/plugins/tree/master) - [Lunch Money Plugin Docs for TRMNL Users](https://help.usetrmnl.com/en/articles/9613508-lunch-money) - (by Ryan Kulp)
 
-## Keyboard Shortcuts
+## Keyboard Shortcuts and Browser Extensions for Lunch Money
 * [moneymover: A Chrome extension designed to give superpowers to Lunch Money](https://github.com/adamtaylor13/moneymover) - keyboard shortcuts for Lunch Money - (by Adam Taylor)
+* [toolkit-for-lunch-money: Enhances the Lunch Money web app with additional features](https://github.com/tj-tee/toolkit-for-lunch-money) - A chrome extension designed to support multiple enhancements to Lunch Money.  Currently it facilitates splitting transactions by auto-populating the amount of the next transaction after setting the current one. This project seems like a great opportunity for community contributions - (by tj-tee)
+  
+## AI Powered Virtual Financial Coach
+* [lunchmoney-mcp-server](https://github.com/leafeye/lunchmoney-mcp-server) - a Model Context Protocol (MPC) server that connects the Claude Desktop AI to your Lunch Money data. Chat with an AI about your spending and budget habits - (by Levi Pols).
 
 ## Non Open Source
 
 The following projects are not open source, but many Lunch Money users find them helpful:
 
-### Mobile Apps
-* [BrunchMoney on the App Store](https://apps.apple.com/us/app/brunchmoney/id6504777580) an iOS app for Lunch Money - (by Nicholas Lusskin).
-
 ### Transaction Import Tools
 * [LunchFlow - Effortlessly connect your EU and UK bank accounts to Lunch Money](https://www.lunchflow.app/) - (by Amr Awad)
-  * Subscription based service to automatically import transaction from banks based in Europe
+  * Subscription based service to automatically import transaction from banks around the globe into Lunch Money and Google Sheets.
 
 
