@@ -48,6 +48,8 @@ DISCLAIMER: The projects listed here are built and maintained by members of the 
 
 ## Open Source Mobile Apps
 
+* [BBudget: A companion web application for lunch money](https://github.com/cleansoftlv/bbudget) - A fast, mobile-first companion web app. Provides simple UI for manual transaction input and review. Perfect for less advanced users - (by Alex Shakhov).
+  * Available at [www.bbudget.com](https://www.bbudget.com)
 * [lunch\_money\_companion: A companion Android application for lunch money](https://github.com/Rodrigolmti/lunch_money_companion) - A companion Android application for lunch money - (by Rodrigo Lopes).   
   * Available in the [Google Play Store](https://play.google.com/store/apps/details?id=com.rodrigolmti.lunch.money.companion))
   * [Lunch Money Companion Discord Channel](https://discord.com/channels/842337014556262411/1257168913968529478)
