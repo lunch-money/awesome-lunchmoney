@@ -90,6 +90,7 @@ DISCLAIMER: The projects listed here are built and maintained by members of the 
   
 ## AI Powered Virtual Financial Coach
 * [lunchmoney-mcp-server](https://github.com/leafeye/lunchmoney-mcp-server) - a Model Context Protocol (MPC) server that connects the Claude Desktop AI to your Lunch Money data. Chat with an AI about your spending and budget habits - (by Levi Pols).
+* [lunchmoney-mcp](https://github.com/akutishevsky/lunchmoney-mcp) - A Model Context Protocol server that covers 100% of the Lunch Money API functionality - (by akutishevsky).
 
 ## Non Open Source
 
