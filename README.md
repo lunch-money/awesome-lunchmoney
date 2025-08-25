@@ -85,6 +85,7 @@ DISCLAIMER: The projects listed here are built and maintained by members of the 
 ## Visualization Tools
 * [lunch-sankey: Generate Sankey Diagrams from Lunch Money Transactions](https://github.com/aneeshd16/lunch-sankey) - [Try it!](https://lunch-sankey.vercel.app/) - (by Aneesh Devasthale)
 * [Lunch Money plugin for TRMNL an e-ink dashboard on github](https://github.com/usetrmnl/plugins/tree/master) - [Lunch Money Plugin Docs for TRMNL Users](https://help.usetrmnl.com/en/articles/9613508-lunch-money) - (by Ryan Kulp)
+* [lunchtui: A command-line interface for Lunch Money](https://github.com/Rshep3087/lunchtui) - (by Ryan Sheppard)
 
 ## Keyboard Shortcuts and Browser Extensions for Lunch Money
 * [moneymover: A Chrome extension designed to give superpowers to Lunch Money](https://github.com/adamtaylor13/moneymover) - keyboard shortcuts for Lunch Money - (by Adam Taylor)
