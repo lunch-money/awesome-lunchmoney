@@ -69,6 +69,7 @@ DISCLAIMER: The projects listed here are built and maintained by members of the 
 * [LunchSync: Sync Apple Wallet transactions to Lunch Money](https://github.com/milanave/LunchSync) - Available on [Test Flight](https://testflight.apple.com/join/mF8JEHqk) - (by LittleBlueBug).
 
 ## Transaction Update Tools
+* [email-to-lunchmoney: Parse receipt emails into meaningful metadata in Lunch Money](https://github.com/evanpurkhiser/email-to-lunchmoney) - Cloudflare worker that automatically adds metadata from receipt emails (Amazon, Lyft, Cloudflare, Apple) to Lunch Money transactions. Supports splitting Amazon orders by item and adding ride details to Lyft transactions - (by Evan Purkhiser).
 * [lunchmoney-amazon: Categorize, and add order numbers, to Amazon transactions in LunchMoney](https://github.com/iloveitaly/lunchmoney-amazon) - for javascript fans (by Michael Bianco).
 * [lunchable-primelunch: LunchMoney Amazon Transaction Updater](https://github.com/juftin/lunchable-primelunch) - for python fans (by Justin Flannery).
 
