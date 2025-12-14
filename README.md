@@ -90,6 +90,7 @@ DISCLAIMER: The projects listed here are built and maintained by members of the 
 ## Keyboard Shortcuts and Browser Extensions for Lunch Money
 * [moneymover: A Chrome extension designed to give superpowers to Lunch Money](https://github.com/adamtaylor13/moneymover) - keyboard shortcuts for Lunch Money - (by Adam Taylor)
 * [toolkit-for-lunch-money: Enhances the Lunch Money web app with additional features](https://github.com/tj-tee/toolkit-for-lunch-money) - A chrome extension designed to support multiple enhancements to Lunch Money.  Currently it facilitates splitting transactions by auto-populating the amount of the next transaction after setting the current one. This project seems like a great opportunity for community contributions - (by tj-tee)
+* [Lunch Money Raycast Extension](https://www.raycast.com/oppenheimer/lunchmoney) - An open source extension for [Raycast](https://www.raycast.com/) (by Maxime Cattet and Zeb Pykosz)
   
 ## AI Powered Virtual Financial Coach
 * [lunchmoney-mcp-server](https://github.com/leafeye/lunchmoney-mcp-server) - a Model Context Protocol (MPC) server that connects the Claude Desktop AI to your Lunch Money data. Chat with an AI about your spending and budget habits - (by Levi Pols).
