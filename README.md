@@ -30,6 +30,7 @@ DISCLAIMER: The projects listed here are built and maintained by members of the 
   - [AI Powered Virtual Financial Coach](#ai-powered-virtual-financial-coach)
   - [Non Open Source](#non-open-source)
     - [Transaction Import Tools](#transaction-import-tools-1)
+    - [Sync Lunch Money Data to Other Tools](#sync-lunch-money-data-to-other-tools)
 
 ## Client SDKs and Language Specific API Wrappers
 
@@ -104,4 +105,6 @@ The following projects are not open source, but many Lunch Money users find them
 * [LunchFlow - Effortlessly connect your EU and UK bank accounts to Lunch Money](https://www.lunchflow.app/) - (by Amr Awad)
   * Subscription based service to automatically import transaction from banks around the globe into Lunch Money and Google Sheets.
 
-
+### Sync Lunch Money Data to Other Tools
+* [Lunch Money x ProjectionLab](https://chromewebstore.google.com/detail/lunch-money-to-projection/olmhamhfelfcccahmjkolgompiaijkhd?utm_source=item-share-cb) -(by Lunch Money) 
+  * Download this Chrome browser extension to import your account balances from Lunch Money into [ProjectionLab](https://projectionlab.com/) and get a jump start on your retirement planning.
