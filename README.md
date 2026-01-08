@@ -72,6 +72,7 @@ DISCLAIMER: The projects listed here are built and maintained by members of the 
 ## Transaction Update Tools
 * [lunchmoney-amazon: Categorize, and add order numbers, to Amazon transactions in LunchMoney](https://github.com/iloveitaly/lunchmoney-amazon) - for javascript fans (by Michael Bianco).
 * [lunchable-primelunch: LunchMoney Amazon Transaction Updater](https://github.com/juftin/lunchable-primelunch) - for python fans (by Justin Flannery).
+* [venmo-lunchmoney-ai: AI-powered Venmo reimbursement matching](https://github.com/evanpurkhiser/venmo-lunchmoney-ai) - Uses GPT-4 to automatically match and group Venmo reimbursement transactions with the original transactions being reimbursed - (by Evan Purkhiser).
 
 
 ## Notifiers, Widgets and Bots
