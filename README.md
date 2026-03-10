@@ -83,6 +83,7 @@ Looking to generate your own SDK? Install the [Lunch Money v2 OpenAPI Spec](http
 * [lunchsimple](https://sr.ht/~colbyhub/lunchsimple/) - Import Wealthsimple activity into Lunch Money budgets - (by Colby Hubscher)
 * [LunchSync: Sync Apple Wallet transactions to Lunch Money](https://github.com/milanave/LunchSync) - Available on [Test Flight](https://testflight.apple.com/join/mF8JEHqk) - (by LittleBlueBug).
 * [LunchSync SG: Sync bank transactions from Singapore banks to Lunch Money](https://github.com/shyamsundar2007/lunchsync-sg) - (by Shyam)
+* [assorted-to-lunchmoney:Import transactions from Japanese banks via Money Forward](https://github.com/n3v3rf411/assorted-to-lunchmoney) - (by Willie Loyd Tandingan)
 
 ### Bookmarklets
 
