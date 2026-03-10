@@ -40,7 +40,7 @@ DISCLAIMER: The projects listed here are built and maintained by members of the 
 ### For the [V2 API](https://alpha.lunchmoney.dev/v2/docs)
 
 * JavaScript/Typescript
-  * [Lunch Money Javascript API](https://github.com/lunch-money/lunch-money-js-v2) - Official JS SDK from the Lunch Money team. Full Typescript support.
+  * [Lunch Money Javascript SDK](https://github.com/lunch-money/lunch-money-js-v2) - Official JS SDK from the Lunch Money team. Full Typescript support.
     * [Load from NPM](https://www.npmjs.com/package/@lunch-money/lunch-money-js-v2)
 * Python
   * [lunchmoney-python](https://github.com/juftin/lunchmoney-clients) - a generated Python SDK by Justin Flannery, author of the popular lunchable client.
