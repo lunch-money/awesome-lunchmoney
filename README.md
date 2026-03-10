@@ -93,6 +93,7 @@ Bookmarklets are browser bookmarks that run some javascript code. If you have a 
 * [CFNA (Firestone Branded Credit Card) Transactions to Lunch Money](https://github.com/jpjpjp/cfna-to-lunchmoney) - (by JP@LunchMoney.app)
 
 ## Transaction Update Tools
+* [email-to-lunchmoney: Parse receipt emails into meaningful metadata in Lunch Money](https://github.com/evanpurkhiser/email-to-lunchmoney) - Cloudflare worker that automatically adds metadata from receipt emails (Amazon, Lyft, Cloudflare, Apple) to Lunch Money transactions. Supports splitting Amazon orders by item and adding ride details to Lyft transactions - (by Evan Purkhiser).
 * [lunchmoney-amazon: Categorize, and add order numbers, to Amazon transactions in LunchMoney](https://github.com/iloveitaly/lunchmoney-amazon) - for javascript fans (by Michael Bianco).
 * [lunchable-primelunch: LunchMoney Amazon Transaction Updater](https://github.com/juftin/lunchable-primelunch) - for python fans (by Justin Flannery).
 * [email-to-lunch-money: Track email receipts for Amazon, Lyft and others to update Lunch Money Transactions](https://github.com/evanpurkhiser/email-to-lunchmoney/) - (by Evan)
