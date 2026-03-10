@@ -20,20 +20,34 @@ DISCLAIMER: The projects listed here are built and maintained by members of the 
     - [Contributing](#contributing)
     - [Contents](#contents)
   - [Client SDKs and Language Specific API Wrappers](#client-sdks-and-language-specific-api-wrappers)
+    - [For the V2 API](#for-the-v2-api)
+    - [For the V1 API](#for-the-v1-api)
   - [Open Source Mobile Apps](#open-source-mobile-apps)
   - [Transaction Import Tools](#transaction-import-tools)
+    - [Bookmarklets](#bookmarklets)
   - [Transaction Update Tools](#transaction-update-tools)
   - [Notifiers, Widgets and Bots](#notifiers-widgets-and-bots)
   - [Asset Value and Balance Update Tools](#asset-value-and-balance-update-tools)
   - [Visualization Tools](#visualization-tools)
   - [Keyboard Shortcuts and Browser Extensions for Lunch Money](#keyboard-shortcuts-and-browser-extensions-for-lunch-money)
-  - [AI Powered Virtual Financial Coach](#ai-powered-virtual-financial-coach)
+  - [MCP Servers](#mcp-servers)
   - [Non Open Source](#non-open-source)
     - [Transaction Import Tools](#transaction-import-tools-1)
     - [Sync Lunch Money Data to Other Tools](#sync-lunch-money-data-to-other-tools)
 
 ## Client SDKs and Language Specific API Wrappers
 
+### For the [V2 API](https://alpha.lunchmoney.dev/v2/docs)
+
+* JavaScript/Typescript
+  * [Official Lunch Money Typescript API](https://github.com/lunch-money/lunch-money-js-v2)
+    * [Load from NPM](https://www.npmjs.com/package/@lunch-money/lunch-money-js-v2)
+* Python
+  * [lunchmoney-python](https://github.com/juftin/lunchmoney-clients) - a generated Python SDK by Justin Flannery, author of the popular lunchable client.
+
+Looking to generate your own SDK? Install the [Lunch Money v2 OpenAPI Spec](https://www.npmjs.com/package/@lunch-money/v2-api-spec) and user your favorite tool, or use [Justin's Lunch Money Client repo](https://github.com/juftin/lunchmoney-clients).
+
+### For the [V1 API](https://lunchmoney.app)
 * Dart 
     * [lunchmoney\_dart: A Lunch Money API wrapper written in Dart](https://github.com/V3ntus/lunchmoney_dart) - SDK for Flutter apps (by Ventus).
 * Go
@@ -68,10 +82,19 @@ DISCLAIMER: The projects listed here are built and maintained by members of the 
 * [td-lunchmoney-importer: Imports a TD QFX multi-account file directly to Lunch Money](https://github.com/thehedgefrog/td-lunchmoney-importer) - (by Max).
 * [lunchsimple](https://sr.ht/~colbyhub/lunchsimple/) - Import Wealthsimple activity into Lunch Money budgets - (by Colby Hubscher)
 * [LunchSync: Sync Apple Wallet transactions to Lunch Money](https://github.com/milanave/LunchSync) - Available on [Test Flight](https://testflight.apple.com/join/mF8JEHqk) - (by LittleBlueBug).
+* [LunchSync SG: Sync bank transactions from Singapore banks to Lunch Money](https://github.com/shyamsundar2007/lunchsync-sg) - (by Shyam)
+
+### Bookmarklets
+
+Bookmarklets are browser bookmarks that run some javascript code. If you have a bank that isn't supported by Plaid, you may be able to use a bookmarklet to import your transactions to Lunch Money after logging in to your banks website.  If you don't see your bank listed below but feel comfortable with javascript or asking an AI to help you, you may be able to modify these bookmarklets to work with your bank. Need help? Join the conversation on the Bookmarklets channel on the [Lunch Money Discord Server](https://discord.com/channels/842337014556262411/1480708918391996588).
+
+* [ICS (in The Netherlands) Credit Card Transactions to Lunch Money](https://getbookmarklets.com/scripts/add?source_url=https%3A%2F%2Fraw.githubusercontent.com%2FH1D%2Fics_lunchmoney_sync%2Fmain%2Fbookmarklet%2Fsrc%2Fbookmarklet.js) - (by Artem S)
+* [CFNA (Firestone Branded Credit Card) Transactions to Lunch Money](https://github.com/jpjpjp/cfna-to-lunchmoney) - (by JP@LunchMoney.app)
 
 ## Transaction Update Tools
 * [lunchmoney-amazon: Categorize, and add order numbers, to Amazon transactions in LunchMoney](https://github.com/iloveitaly/lunchmoney-amazon) - for javascript fans (by Michael Bianco).
 * [lunchable-primelunch: LunchMoney Amazon Transaction Updater](https://github.com/juftin/lunchable-primelunch) - for python fans (by Justin Flannery).
+* [email-to-lunch-money: Track email receipts for Amazon, Lyft and others to update Lunch Money Transactions](https://github.com/evanpurkhiser/email-to-lunchmoney/) - (by Evan)
 
 
 ## Notifiers, Widgets and Bots
@@ -87,15 +110,20 @@ DISCLAIMER: The projects listed here are built and maintained by members of the 
 * [lunch-sankey: Generate Sankey Diagrams from Lunch Money Transactions](https://github.com/aneeshd16/lunch-sankey) - [Try it!](https://lunch-sankey.vercel.app/) - (by Aneesh Devasthale)
 * [Lunch Money plugin for TRMNL an e-ink dashboard on github](https://github.com/usetrmnl/plugins/tree/master) - [Lunch Money Plugin Docs for TRMNL Users](https://help.usetrmnl.com/en/articles/9613508-lunch-money) - (by Ryan Kulp)
 * [lunchtui: A command-line interface for Lunch Money](https://github.com/Rshep3087/lunchtui) - (by Ryan Sheppard)
+* [lunch-buddy: Track Lunch Money budget progress at glance](https://github.com/astiskala/lunch-buddy) - Cool Progressive Web app! [Try it!](https://lunch-buddy.app/). - (by Adam Stiskala)
+*  [Kids Companion App for Lunch Money](https://github.com/H1D/lunch-money-kids-companion) - Help Kids learn to be better savers! [Try it!](https://lunch-money-kids.netlify.app/)
 
 ## Keyboard Shortcuts and Browser Extensions for Lunch Money
 * [moneymover: A Chrome extension designed to give superpowers to Lunch Money](https://github.com/adamtaylor13/moneymover) - keyboard shortcuts for Lunch Money - (by Adam Taylor)
 * [toolkit-for-lunch-money: Enhances the Lunch Money web app with additional features](https://github.com/tj-tee/toolkit-for-lunch-money) - A chrome extension designed to support multiple enhancements to Lunch Money.  Currently it facilitates splitting transactions by auto-populating the amount of the next transaction after setting the current one. This project seems like a great opportunity for community contributions - (by tj-tee)
 * [Lunch Money Raycast Extension](https://www.raycast.com/oppenheimer/lunchmoney) - An open source extension for [Raycast](https://www.raycast.com/) (by Maxime Cattet and Zeb Pykosz)
   
-## AI Powered Virtual Financial Coach
-* [lunchmoney-mcp-server](https://github.com/leafeye/lunchmoney-mcp-server) - a Model Context Protocol (MPC) server that connects the Claude Desktop AI to your Lunch Money data. Chat with an AI about your spending and budget habits - (by Levi Pols).
-* [lunchmoney-mcp](https://github.com/akutishevsky/lunchmoney-mcp) - A Model Context Protocol server that covers 100% of the Lunch Money API functionality - (by akutishevsky).
+## MCP Servers
+* [lunchmoney-mcp-server](https://github.com/leafeye/lunchmoney-mcp-v2) - a Model Context Protocol (MPC) server that connects the Claude Desktop AI to your Lunch Money data. Chat with an AI about your spending and budget habits. Now based on Lunch Money v2 API! - (by Levi Pols).
+* [lunchmoney-mcp](https://github.com/akutishevsky/lunchmoney-mcp) - A Model Context Protocol server that covers 100% of the Lunch Money API functionality. Easy install and logging for troubleshooting. - (by akutishevsky).
+* [MCP based on the Lunch Money v2 SDK](https://github.com/ConnorDBurge/lunchmoney-mcp-v2) - (by Conner Burge)
+
+Join the [Using Lunch Money with AI conversation on Discord](https://discord.com/channels/842337014556262411/1425305869813547030)
 
 ## Non Open Source
 
