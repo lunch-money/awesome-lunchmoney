@@ -63,20 +63,15 @@ Official and community-built libraries to interact with the Lunch Money API in y
 
 ## Transaction Import Tools
 
-Import transactions from banks and services that aren't natively supported by Lunch Money.
-
-* [RBC-LunchMoney](https://github.com/MykalMachon/RBC-LunchMoney) - Import RBC (Royal Bank of Canada) transactions into Lunch Money. - (by Mykal Machon)
-* [lunchmoney-fintoc-sync](https://github.com/agucova/lunchmoney-fintoc-sync) - Rust CLI to sync Fintoc-aggregated transactions with Lunch Money, designed for the Chilean bank system. - (by Agustín Covarrubias)
-* [lunchable-splitlunch](https://github.com/juftin/lunchable-splitlunch) - Import transactions from Splitwise into Lunch Money seamlessly. - (by Justin Flannery)
-* [Lunch Money Shortcuts](https://github.com/patrontheo/Lunch-Money-Shortcuts) - iOS Shortcuts to import transactions and interact with Lunch Money from your iPhone. - (by Theo Patron)
-* [td-lunchmoney-importer](https://github.com/thehedgefrog/td-lunchmoney-importer) - Import a TD Bank QFX multi-account file directly to Lunch Money. - (by Max)
-* [lunchsimple](https://sr.ht/~colbyhub/lunchsimple/) - Import Wealthsimple activity into your Lunch Money budgets. - (by Colby Hubscher)
-  * [Discord](https://discord.com/channels/842337014556262411/1344360183597629460)
-* [LunchSync](https://github.com/milanave/LunchSync) - Sync Apple Wallet transactions to Lunch Money. Available on TestFlight. - (by LittleBlueBug)
-  * [TestFlight](https://testflight.apple.com/join/mF8JEHqk)
-  * [Discord](https://discord.com/channels/842337014556262411/1423505146029019257)
-* [LunchSync SG](https://github.com/shyamsundar2007/lunchsync-sg) - Sync bank transactions from Singapore banks to Lunch Money. - (by Shyam)
-* [assorted-to-lunchmoney](https://github.com/n3v3rf411/assorted-to-lunchmoney) - Import transactions from Japanese banks via Money Forward. - (by Willie Loyd Tandingan)
+* [RBC-LunchMoney: Import RBC transactions into LunchMoney](https://github.com/MykalMachon/RBC-LunchMoney) - (by Mykal Machon).
+* [lunchmoney-fintoc-sync: Rust CLI to sync Fintoc-aggregated transactions with Lunch Money (for the Chilean bank system)](https://github.com/agucova/lunchmoney-fintoc-sync) - (by Agustín Covarrubias).
+* [lunchable-splitlunch: LunchMoney + Splitwise Integration](https://github.com/juftin/lunchable-splitlunch) - import transactions from [Splitwise](https://www.splitwise.com/) - (by Justin Flannery).
+* [Lunch-Money-Shortcuts: Shortcuts to use interact with Lunch Money from your iPhone](https://github.com/patrontheo/Lunch-Money-Shortcuts) - import transaction via an iOS Shortcut - (by Theo Patron).
+* [td-lunchmoney-importer: Imports a TD QFX multi-account file directly to Lunch Money](https://github.com/thehedgefrog/td-lunchmoney-importer) - (by Max).
+* [lunchsimple](https://sr.ht/~colbyhub/lunchsimple/) - Import Wealthsimple activity into Lunch Money budgets - (by Colby Hubscher)
+* [LunchSync: Sync Apple Wallet transactions to Lunch Money](https://github.com/milanave/LunchSync) - Available on [Test Flight](https://testflight.apple.com/join/mF8JEHqk) - (by LittleBlueBug).
+* [LunchSync SG: Sync bank transactions from Singapore banks to Lunch Money](https://github.com/shyamsundar2007/lunchsync-sg) - (by Shyam)
+* [assorted-to-lunchmoney:Import transactions from Japanese banks via Money Forward](https://github.com/n3v3rf411/assorted-to-lunchmoney) - (by Willie Loyd Tandingan)
 
 ### Bookmarklets
 
