@@ -1,0 +1,400 @@
+#
+# Canonical source for the Awesome Lunch Money developer ecosystem catalog.
+#
+# This file drives two generated outputs:
+#   - The catalog section of README.md (all entries included)
+#   - generated/developer_tools.yml (for the marketing site)
+#
+# To add or update a tool, edit this file and open a pull request.
+# See contributing.md for guidelines and the full field reference.
+#
+# Tool fields:
+#   name        (required) — Display name
+#   description (required) — Short description
+#   author      (optional) — Creator name
+#   lang        (optional) — Language/platform tag (js, python, go, ruby, dart, kotlin, rust, ios, android, chrome, web, cli, pwa)
+#   lang_label  (optional) — Override the displayed label for the lang tag (e.g. "TypeScript")
+#   github      (optional) — GitHub URL
+#   url         (optional) — Live demo, website, or app store URL
+#   url_label   (optional) — Label for the url link (default: "Website")
+#   official    (optional) — Set to true for official Lunch Money projects
+#   spotlight   (optional) — Blog post URL for a community spotlight featuring this tool
+#   discord     (optional) — Discord channel URL for this tool's discussion thread
+#   links       (optional) — Additional links as list of {url, label} objects
+#
+# Control fields:
+#   marketing_site.include  (optional) — Set to false to exclude from marketing site (default: true)
+#   readme.include          (optional) — Set to false to exclude from README (default: true)
+#
+# Set both to false to archive a tool: it stays in tools.yml as a record but
+# disappears from all generated outputs.
+#
+
+- id: sdks
+  icon: "🧱"
+  title: Client SDKs & API Wrappers
+  description: >-
+    Official and community-built libraries to interact with the Lunch Money API in your language of choice.
+    Looking to generate your own? Install the <a href="https://www.npmjs.com/package/@lunch-money/v2-api-spec" target="_blank" class="no-dec">Lunch Money v2 OpenAPI Spec</a>.
+  subsections:
+    - title: V2 API
+      tools:
+        - name: Lunch Money JavaScript SDK
+          description: Official JS SDK from the Lunch Money team with full TypeScript support.
+          author: Lunch Money
+          official: true
+          lang: js
+          github: https://github.com/lunch-money/lunch-money-js-v2
+          links:
+            - url: https://www.npmjs.com/package/@lunch-money/lunch-money-js-v2
+              label: "NPM"
+
+        - name: lunchmoney-python
+          description: A generated Python SDK for the v2 API by Justin Flannery, author of the popular lunchable client.
+          author: Justin Flannery
+          lang: python
+          github: https://github.com/juftin/lunchmoney-clients
+
+    - title: V1 API
+      tools:
+        - name: lunchmoney_dart
+          description: A Lunch Money API wrapper written in Dart, perfect for building Flutter apps.
+          author: Ventus
+          lang: dart
+          github: https://github.com/V3ntus/lunchmoney_dart
+
+        - name: lunchmoney (Go)
+          description: Golang API wrapper for the Lunch Money API.
+          author: Nat Welch
+          lang: go
+          github: https://github.com/icco/lunchmoney
+
+        - name: lunch-money-js
+          description: JavaScript client for the Lunch Money API with TypeScript type definitions available via NPM.
+          author: Lunch Money
+          official: true
+          lang: js
+          github: https://github.com/lunch-money/lunch-money-js
+
+        - name: lunchmoney (Kotlin)
+          description: Non-blocking JVM client for the Lunch Money developer API, built for Java and Kotlin developers.
+          author: Dmytro Marchuk
+          lang: kotlin
+          github: https://github.com/smaugfm/lunchmoney
+
+        - name: lunchable
+          description: Full-featured Python client for the Lunch Money Developer API.
+          author: Justin Flannery
+          lang: python
+          github: https://github.com/juftin/lunchable
+          spotlight: /blog/2025-02-28-community-newsletter
+
+        - name: lunchmoney (Ruby)
+          description: A Ruby gem API client library for the Lunch Money API.
+          author: Michael Menanno
+          lang: ruby
+          github: https://github.com/mmenanno/lunchmoney
+
+- id: mobile-apps
+  icon: "📱"
+  title: Open Source Mobile Apps
+  tools:
+    - name: BBudget
+      description: A fast, mobile-first companion web app. Provides simple UI for manual transaction input and review, perfect for less advanced users.
+      author: Alex Shakhov
+      lang: web
+      lang_label: Web App
+      github: https://github.com/cleansoftlv/bbudget
+      url: https://www.bbudget.com
+      url_label: "Try it"
+      spotlight: /blog/2025-06-30-community-newsletter
+      marketing_site:
+        include: false
+
+    - name: Lunch Money Companion
+      description: A companion Android application for Lunch Money, available on the Google Play Store.
+      author: Rodrigo Lopes
+      lang: android
+      github: https://github.com/Rodrigolmti/lunch_money_companion
+      url: https://play.google.com/store/apps/details?id=com.rodrigolmti.lunch.money.companion
+      url_label: "Google Play"
+      spotlight: /blog/community-spotlight-android-companion-app
+      links:
+        - url: https://discord.com/channels/842337014556262411/1257168913968529478
+          label: "Discord"
+      marketing_site:
+        include: false
+
+    - name: Bento Cash
+      description: An iOS application for Lunch Money with support for importing transactions via SimpleFin.
+      author: Chintan Shah
+      lang: ios
+      github: https://github.com/chintans1/bento-cash
+      links:
+        - url: https://discord.com/channels/842337014556262411/1248167168877662348
+          label: "Request TestFlight"
+      marketing_site:
+        include: false
+
+- id: import-tools
+  icon: "📥"
+  title: Transaction Import Tools
+  description: Import transactions from banks and services that aren't natively supported by Lunch Money.
+  tools:
+    - name: RBC-LunchMoney
+      description: Import RBC (Royal Bank of Canada) transactions into Lunch Money.
+      author: Mykal Machon
+      github: https://github.com/MykalMachon/RBC-LunchMoney
+
+    - name: lunchmoney-fintoc-sync
+      description: Rust CLI to sync Fintoc-aggregated transactions with Lunch Money, designed for the Chilean bank system.
+      author: Agustín Covarrubias
+      lang: rust
+      github: https://github.com/agucova/lunchmoney-fintoc-sync
+
+    - name: lunchable-splitlunch
+      description: Import transactions from Splitwise into Lunch Money seamlessly.
+      author: Justin Flannery
+      lang: python
+      github: https://github.com/juftin/lunchable-splitlunch
+      spotlight: /blog/2026-01-12-community-newsletter
+
+    - name: Lunch Money Shortcuts
+      description: iOS Shortcuts to import transactions and interact with Lunch Money from your iPhone.
+      author: Theo Patron
+      lang: ios
+      github: https://github.com/patrontheo/Lunch-Money-Shortcuts
+
+    - name: td-lunchmoney-importer
+      description: Import a TD Bank QFX multi-account file directly to Lunch Money.
+      author: Max
+      github: https://github.com/thehedgefrog/td-lunchmoney-importer
+      spotlight: /blog/2025-03-31-community-newsletter
+
+    - name: lunchsimple
+      description: Import Wealthsimple activity into your Lunch Money budgets.
+      author: Colby Hubscher
+      url: https://sr.ht/~colbyhub/lunchsimple/
+      url_label: "Source"
+      spotlight: /blog/2025-02-28-community-newsletter
+      discord: https://discord.com/channels/842337014556262411/1344360183597629460
+
+    - name: LunchSync
+      description: Sync Apple Wallet transactions to Lunch Money. Available on TestFlight.
+      author: LittleBlueBug
+      lang: ios
+      github: https://github.com/milanave/LunchSync
+      spotlight: /blog/2025-03-31-community-newsletter
+      discord: https://discord.com/channels/842337014556262411/1423505146029019257
+      links:
+        - url: https://testflight.apple.com/join/mF8JEHqk
+          label: "TestFlight"
+
+    - name: LunchSync SG
+      description: Sync bank transactions from Singapore banks to Lunch Money.
+      author: Shyam
+      github: https://github.com/shyamsundar2007/lunchsync-sg
+
+    - name: assorted-to-lunchmoney
+      description: Import transactions from Japanese banks via Money Forward.
+      author: Willie Loyd Tandingan
+      github: https://github.com/n3v3rf411/assorted-to-lunchmoney
+
+  subsections:
+    - title: Bookmarklets
+      description: >-
+        Browser bookmarks that run JavaScript to import transactions after logging in to your bank's website. Don't see your bank?
+        <a href="https://discord.com/channels/842337014556262411/1480708918391996588" target="_blank" class="no-dec">Join the Bookmarklets channel</a> on Discord.
+      tools:
+        - name: ICS Credit Card → Lunch Money
+          description: Import ICS (Netherlands) credit card transactions directly to Lunch Money.
+          author: Artem S
+          url: https://getbookmarklets.com/scripts/add?source_url=https%3A%2F%2Fraw.githubusercontent.com%2FH1D%2Fics_lunchmoney_sync%2Fmain%2Fbookmarklet%2Fsrc%2Fbookmarklet.js
+          url_label: "Install"
+          spotlight: /blog/2026-03-10-community-newsletter
+
+        - name: CFNA Credit Card → Lunch Money
+          description: Import CFNA (Firestone-branded credit card) transactions to Lunch Money.
+          author: JP@LunchMoney.app
+          github: https://github.com/jpjpjp/cfna-to-lunchmoney
+          spotlight: /blog/2026-03-10-community-newsletter
+
+- id: update-tools
+  icon: "🔄"
+  title: Transaction Update Tools
+  description: Automatically categorize, enrich, and manage your existing Lunch Money transactions.
+  tools:
+    - name: lunchmoney-amazon
+      description: Categorize and add order numbers to Amazon transactions in Lunch Money.
+      author: Michael Bianco
+      lang: js
+      github: https://github.com/iloveitaly/lunchmoney-amazon
+      spotlight: /blog/2025-05-01-community-newsletter
+
+    - name: lunchable-primelunch
+      description: Amazon transaction updater for Lunch Money, built in Python.
+      author: Justin Flannery
+      lang: python
+      github: https://github.com/juftin/lunchable-primelunch
+      spotlight: /blog/2026-01-12-community-newsletter
+
+    - name: email-to-lunch-money
+      description: Track email receipts for Amazon, Lyft and others to update Lunch Money transactions.
+      author: Evan
+      github: https://github.com/evanpurkhiser/email-to-lunchmoney/
+      spotlight: /blog/2026-04-14-community-newsletter
+
+- id: notifications
+  icon: "🔔"
+  title: Notifications, Widgets & Bots
+  tools:
+    - name: Lunch Money iOS Widget
+      description: An iOS widget for Lunch Money statuses, giving you a budget overview at a glance.
+      author: Bernd Salewski
+      lang: ios
+      github: https://github.com/berndsalewski/lunch-money-widget
+
+    - name: LunchMoneyBudgetNotifier
+      description: Retrieve current credit card balances and send push notifications on balance changes.
+      author: James Hansen
+      github: https://github.com/jameshansen/LunchMoneyBudgetNotifier
+
+    - name: lonchera
+      description: A Telegram bot that notifies users of new transactions with tools to view and manage budgets. Includes optional AI-powered transaction categorization.
+      author: Cristian Knur
+      github: https://github.com/casidiablo/lonchera
+      spotlight: /blog/2024-11-29-community-newsletter
+      discord: https://discord.com/channels/842337014556262411/1311765488140816484
+
+- id: asset-tools
+  icon: "💰"
+  title: Asset Value & Balance Tools
+  tools:
+    - name: lunchmoney-t212
+      description: Synchronize Trading212 investment values with Lunch Money automatically.
+      author: Alin Ali Hassan
+      github: https://github.com/alinalihassan/lunchmoney-t212
+
+    - name: lunchmoney-assets
+      description: Update real estate and car values in Lunch Money with current market data.
+      author: Michael Bianco
+      github: https://github.com/iloveitaly/lunchmoney-assets
+
+- id: visualization
+  icon: "📊"
+  title: Visualization Tools
+  tools:
+    - name: lunch-sankey
+      description: Generate beautiful Sankey diagrams from your Lunch Money transactions.
+      author: Aneesh Devasthale
+      lang: web
+      lang_label: Web App
+      github: https://github.com/aneeshd16/lunch-sankey
+      url: https://lunch-sankey.vercel.app/
+      url_label: "Try it"
+      spotlight: /blog/2024-12-27-community-newsletter
+
+    - name: TRMNL Plugin
+      description: Lunch Money plugin for TRMNL, an e-ink dashboard. See your budget on a beautiful ambient display.
+      author: Ryan Kulp
+      github: https://github.com/usetrmnl/plugins/tree/master
+      spotlight: /blog/community-spotlight-trmnl
+      links:
+        - url: https://help.usetrmnl.com/en/articles/9613508-lunch-money
+          label: "Docs"
+
+    - name: lunchtui
+      description: A beautiful command-line interface for managing your Lunch Money data right from the terminal.
+      author: Ryan Sheppard
+      lang: cli
+      github: https://github.com/Rshep3087/lunchtui
+      spotlight: /blog/2025-06-30-community-newsletter
+
+    - name: lunch-buddy
+      description: Track your Lunch Money budget progress at a glance with this Progressive Web App.
+      author: Adam Stiskala
+      lang: pwa
+      github: https://github.com/astiskala/lunch-buddy
+      url: https://lunch-buddy.app/
+      url_label: "Try it"
+      spotlight: /blog/2026-02-10-community-newsletter
+      discord: https://discord.com/channels/842337014556262411/1470488793391038485
+
+    - name: Kids Companion App
+      description: Help kids learn to be better savers with this companion app for Lunch Money.
+      lang: web
+      lang_label: Web App
+      github: https://github.com/H1D/lunch-money-kids-companion
+      url: https://lunch-money-kids.netlify.app/
+      url_label: "Try it"
+      spotlight: /blog/2026-03-10-community-newsletter
+      discord: https://discord.com/channels/842337014556262411/1480708810443329666
+
+- id: extensions
+  icon: "⚡"
+  title: Extensions & Keyboard Shortcuts
+  tools:
+    - name: MoneyMover
+      description: A Chrome extension that gives superpowers to Lunch Money with keyboard shortcuts and productivity features.
+      author: Adam Taylor
+      lang: chrome
+      github: https://github.com/adamtaylor13/moneymover
+      spotlight: /blog/community-spotlight-toronto-recap-money-mover
+
+    - name: Toolkit for Lunch Money
+      description: A Chrome extension that enhances the Lunch Money web app. Currently facilitates splitting transactions by auto-populating amounts.
+      author: tj-tee
+      lang: chrome
+      github: https://github.com/tj-tee/toolkit-for-lunch-money
+
+    - name: Lunch Money Raycast Extension
+      description: An open source extension for Raycast to quickly access your Lunch Money data.
+      author: Maxime Cattet & Zeb Pykosz
+      url: https://www.raycast.com/oppenheimer/lunchmoney
+      url_label: "Raycast Store"
+
+- id: mcp-servers
+  icon: "🤖"
+  title: MCP Servers
+  description: >-
+    Connect AI assistants like Claude to your Lunch Money data using the Model Context Protocol. Chat with AI about your spending and budget habits.
+    <a href="https://discord.com/channels/842337014556262411/1425305869813547030" target="_blank" class="no-dec">Join the AI Tools channel on Discord</a>.
+  tools:
+    - name: lunchmoney-mcp-server
+      description: A Model Context Protocol server that connects Claude Desktop to your Lunch Money data. Now based on the v2 API.
+      author: Levi Pols
+      github: https://github.com/leafeye/lunchmoney-mcp-v2
+      spotlight: /blog/2025-05-01-community-newsletter
+
+    - name: lunchmoney-mcp
+      description: A Model Context Protocol server that covers 100% of the Lunch Money API functionality with easy install and logging.
+      author: akutishevsky
+      github: https://github.com/akutishevsky/lunchmoney-mcp
+      spotlight: /blog/2025-10-09-community-newsletter
+
+    - name: lunchmoney-mcp-v2
+      description: MCP server built on the official Lunch Money v2 SDK.
+      author: Conner Burge
+      github: https://github.com/ConnorDBurge/lunchmoney-mcp-v2
+
+- id: non-open-source
+  icon: "🔗"
+  title: Other Notable Tools
+  description: These projects aren't open source, but many Lunch Money users find them helpful.
+  tools:
+    - name: LunchFlow
+      description: Effortlessly connect your EU and UK bank accounts to Lunch Money. Subscription-based service for automatic transaction imports.
+      author: Amr Awad
+      url: https://www.lunchflow.app/
+      url_label: "Website"
+      spotlight: /blog/2024-12-27-community-newsletter
+      discord: https://discord.com/channels/842337014556262411/1283135769933905971
+
+    - name: Lunch Money × ProjectionLab
+      description: Chrome extension to import your account balances from Lunch Money into ProjectionLab for retirement planning.
+      author: Lunch Money
+      official: true
+      lang: chrome
+      url: https://chromewebstore.google.com/detail/lunch-money-to-projection/olmhamhfelfcccahmjkolgompiaijkhd
+      url_label: "Chrome Web Store"
+      spotlight: /blog/2026-01-12-community-newsletter

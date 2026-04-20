@@ -1,13 +1,14 @@
-Please check that what you want to add to `awesome-lumchmoney` meets these [Quality standards](./CONTRIBUTING.md#quality-standard) before sending pull requests. Thanks!
+Please check that your submission meets the [quality standards](./contributing.md#quality-standards) before sending a pull request. Thanks!
 
-**Have you checked the boxes below before submitting your PR:**
-- [ ] I have added my resource in alphabetical order
-- [ ] I know that this resource was not listed before
-- [ ] I have added a link to the source code repo (except for documentation, articles etc.)
-- [ ] I have checked my resource is properly documented
-- [ ] I have added a synthetic description of my resource
-- [ ] I have read the [Contribution guidelines](./CONTRIBUTING.md#contribution-guidelines) and [Quality standards](./CONTRIBUTING.md#quality-standard).
+**Checklist:**
+- [ ] I edited `data/tools.yml`, not `README.md` directly
+- [ ] My entry has a `name` and `description`
+- [ ] I have added a link to the source code repo (or a `url` for non-GitHub projects)
+- [ ] The description is clear, concise, and non-promotional
+- [ ] I checked that this project is not already listed
+- [ ] I have read the [contribution guidelines](./contributing.md)
 
-**Note**: that new sections can be added only when there are three resources or more.
+**Why should this be added?**
+<!-- Brief explanation of what makes this tool useful to the Lunch Money community -->
 
-Thanks for your PR, you're awesome!
+Thanks for your PR — you're awesome!
