@@ -56,6 +56,10 @@ def clean_tool(tool):
     return {k: v for k, v in tool.items() if k not in INTERNAL_FIELDS}
 
 
+def clean_item(item):
+    return {k: v for k, v in item.items() if k not in INTERNAL_FIELDS}
+
+
 def export():
     try:
         with open("data/tools.yml") as f:
@@ -81,9 +85,11 @@ def export():
         if "subsections" in section:
             out_subs = []
             for sub in section["subsections"]:
+                if not should_include(sub):
+                    continue
                 filtered = [clean_tool(t) for t in sub.get("tools", []) if should_include(t)]
                 if filtered:
-                    out_sub = dict(sub)
+                    out_sub = clean_item(sub)
                     out_sub["tools"] = filtered
                     out_subs.append(out_sub)
             out_section["subsections"] = out_subs

@@ -26,6 +26,10 @@ def should_include_in_readme(item):
     return True
 
 
+def should_render_subsection(subsection):
+    return should_include_in_readme(subsection)
+
+
 def html_to_markdown(text):
     """Convert simple HTML anchor tags to Markdown links; strip remaining tags."""
     # <a href="url" ...>label</a> → [label](url)
@@ -81,6 +85,8 @@ def render_section(section):
 
     rendered_subs = []
     for sub in section.get("subsections", []):
+        if not should_render_subsection(sub):
+            continue
         sub_tools = [t for t in sub.get("tools", []) if should_include_in_readme(t)]
         if sub_tools:
             rendered_subs.append((sub, sub_tools))
@@ -107,6 +113,9 @@ def render_section(section):
         lines.append("")
         if sub.get("description"):
             lines.append(html_to_markdown(sub["description"]))
+            lines.append("")
+        if sub.get("note"):
+            lines.append(html_to_markdown(sub["note"]))
             lines.append("")
         for tool in sub_tools:
             lines.append(render_tool(tool))

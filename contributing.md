@@ -28,7 +28,7 @@ Open `data/tools.yml` and add a new entry under the appropriate section's `tools
 - name: my-tool
   description: A short, clear description of what the tool does.
   author: Your Name
-  lang: python          # js, python, go, ruby, dart, kotlin, rust, ios, android, chrome, web, cli, pwa
+  lang: python          # js, python, go, ruby, dart, kotlin, rust, ios, android, chrome, **web**, cli, pwa
   lang_label: Python    # optional override for the displayed tag label
   github: https://github.com/you/my-tool
   url: https://my-tool.example.com
@@ -39,21 +39,46 @@ Open `data/tools.yml` and add a new entry under the appropriate section's `tools
       label: "PyPI"
 ```
 
-## What gets generated automatically
+## Local workflow
+
+After editing [`data/tools.yml`](./data/tools.yml), regenerate the derived files locally and include them in your PR:
+
+```bash
+make generate
+git diff
+git add data/tools.yml README.md generated/developer_tools.yml
+```
+
+This updates:
+
+- `README.md`
+- `generated/developer_tools.yml`
+
+If you do not want to use `make`, you can run the scripts directly:
+
+```bash
+python3 scripts/validate_tools.py
+python3 scripts/export_marketing_yaml.py
+python3 scripts/generate_readme.py
+```
+
+## What happens on merge
 
 When your PR merges to `main`, GitHub Actions runs two scripts:
 
 - `scripts/generate_readme.py` — rewrites the catalog section of `README.md`
 - `scripts/export_marketing_yaml.py` — writes `generated/developer_tools.yml` for the marketing site
 
-You do not need to run these locally. The generated files are committed automatically.
+If your PR already includes the regenerated [`generated/developer_tools.yml`](./generated/developer_tools.yml), the merge to `main` will trigger the workflow that opens or updates a PR against the marketing-site repo.
+
+If your PR only changes [`data/tools.yml`](./data/tools.yml), GitHub Actions will regenerate files in a follow-up bot commit on `main`. That path is less obvious for contributors and makes it harder to review generated changes before merge, so contributors should commit the generated files in the same PR.
 
 ## Optional: local validation
 
 If you have Python 3 installed, you can validate your changes before committing:
 
 ```bash
-python3 scripts/validate_tools.py
+make validate
 ```
 
 To get automatic validation on every commit, install the included git hook once:

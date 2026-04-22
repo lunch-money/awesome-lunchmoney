@@ -6,6 +6,29 @@
 # Changes are applied automatically when that repo merges to main.
 #
 
+- id: mcp-servers
+  icon: 🤖
+  title: MCP Servers
+  description: Connect AI assistants like Claude to your Lunch Money data using the Model Context Protocol. Chat with AI about
+    your spending and budget habits. <a href="https://discord.com/channels/842337014556262411/1425305869813547030" target="_blank"
+    class="no-dec">Join the AI Tools channel on Discord</a>.
+  tools:
+  - name: lunchmoney-mcp-server
+    description: A Model Context Protocol server that connects Claude Desktop to your Lunch Money data. Now based on the v2
+      API.
+    author: Levi Pols
+    github: https://github.com/leafeye/lunchmoney-mcp-v2
+    spotlight: /blog/2025-05-01-community-newsletter
+  - name: lunchmoney-mcp
+    description: A Model Context Protocol server that covers 100% of the Lunch Money API functionality with easy install and
+      logging.
+    author: akutishevsky
+    github: https://github.com/akutishevsky/lunchmoney-mcp
+    spotlight: /blog/2025-10-09-community-newsletter
+  - name: lunchmoney-mcp-v2
+    description: MCP server built on the official Lunch Money v2 SDK.
+    author: Conner Burge
+    github: https://github.com/ConnorDBurge/lunchmoney-mcp-v2
 - id: sdks
   icon: 🧱
   title: Client SDKs & API Wrappers
@@ -24,45 +47,51 @@
       links:
       - url: https://www.npmjs.com/package/@lunch-money/lunch-money-js-v2
         label: NPM
-    - name: lunchmoney-python
-      description: A generated Python SDK for the v2 API by Justin Flannery, author of the popular lunchable client.
+    - name: lunchmoney-clients
+      description: A framework for generating language specific SDKs for the Lunch Money API. Includes a generated Python
+        SDK for the v2 API by Justin Flannery, author of the popular lunchable client.
       author: Justin Flannery
       lang: python
       github: https://github.com/juftin/lunchmoney-clients
-  - title: V1 API
-    tools:
-    - name: lunchmoney_dart
-      description: A Lunch Money API wrapper written in Dart, perfect for building Flutter apps.
-      author: Ventus
-      lang: dart
-      github: https://github.com/V3ntus/lunchmoney_dart
-    - name: lunchmoney (Go)
-      description: Golang API wrapper for the Lunch Money API.
-      author: Nat Welch
-      lang: go
-      github: https://github.com/icco/lunchmoney
-    - name: lunch-money-js
-      description: JavaScript client for the Lunch Money API with TypeScript type definitions available via NPM.
-      author: Lunch Money
-      official: true
-      lang: js
-      github: https://github.com/lunch-money/lunch-money-js
-    - name: lunchmoney (Kotlin)
-      description: Non-blocking JVM client for the Lunch Money developer API, built for Java and Kotlin developers.
-      author: Dmytro Marchuk
-      lang: kotlin
-      github: https://github.com/smaugfm/lunchmoney
-    - name: lunchable
-      description: Full-featured Python client for the Lunch Money Developer API.
-      author: Justin Flannery
-      lang: python
-      github: https://github.com/juftin/lunchable
-      spotlight: /blog/2025-02-28-community-newsletter
-    - name: lunchmoney (Ruby)
-      description: A Ruby gem API client library for the Lunch Money API.
-      author: Michael Menanno
-      lang: ruby
-      github: https://github.com/mmenanno/lunchmoney
+- id: mobile-apps
+  icon: 📱
+  title: Open Source Mobile Apps
+  description: Access and manage your Lunch Money data on the go with these open source mobile apps. Or try <a href="https://lunchmoney.app/download"
+    target="_blank" class="no-dec">the official Lunch Money Mobile App</a>.
+  tools:
+  - name: BBudget
+    description: A fast, mobile-first companion web app. Provides simple UI for manual transaction input and review, perfect
+      for less advanced users.
+    author: Alex Shakhov
+    lang: pwa
+    github: https://github.com/cleansoftlv/bbudget
+    url: https://www.bbudget.com
+    url_label: Try it
+    spotlight: /blog/2025-06-30-community-newsletter
+  - name: Lunch Money Shortcuts
+    description: iOS Shortcuts to import transactions and interact with Lunch Money from your iPhone.
+    author: Theo Patron
+    lang: ios
+    github: https://github.com/patrontheo/Lunch-Money-Shortcuts
+  - name: LunchSync
+    description: Sync Apple Card and Apple Cash transactions to Lunch Money. Available on TestFlight.
+    author: LittleBlueBug
+    lang: ios
+    github: https://github.com/milanave/LunchSync
+    spotlight: /blog/2025-03-31-community-newsletter
+    discord: https://discord.com/channels/842337014556262411/1423505146029019257
+    links:
+    - url: https://testflight.apple.com/join/mF8JEHqk
+      label: TestFlight
+  - name: lunch-buddy
+    description: Track your Lunch Money budget progress at a glance with this Progressive Web App.
+    author: Adam Stiskala
+    lang: pwa
+    github: https://github.com/astiskala/lunch-buddy
+    url: https://lunch-buddy.app/
+    url_label: Try it
+    spotlight: /blog/2026-02-10-community-newsletter
+    discord: https://discord.com/channels/842337014556262411/1470488793391038485
 - id: import-tools
   icon: 📥
   title: Transaction Import Tools
@@ -83,25 +112,13 @@
     lang: python
     github: https://github.com/juftin/lunchable-splitlunch
     spotlight: /blog/2026-01-12-community-newsletter
-  - name: Lunch Money Shortcuts
-    description: iOS Shortcuts to import transactions and interact with Lunch Money from your iPhone.
-    author: Theo Patron
-    lang: ios
-    github: https://github.com/patrontheo/Lunch-Money-Shortcuts
   - name: td-lunchmoney-importer
     description: Import a TD Bank QFX multi-account file directly to Lunch Money.
     author: Max
     github: https://github.com/thehedgefrog/td-lunchmoney-importer
     spotlight: /blog/2025-03-31-community-newsletter
-  - name: lunchsimple
-    description: Import Wealthsimple activity into your Lunch Money budgets.
-    author: Colby Hubscher
-    url: https://sr.ht/~colbyhub/lunchsimple/
-    url_label: Source
-    spotlight: /blog/2025-02-28-community-newsletter
-    discord: https://discord.com/channels/842337014556262411/1344360183597629460
   - name: LunchSync
-    description: Sync Apple Wallet transactions to Lunch Money. Available on TestFlight.
+    description: Sync Apple Card and Apple Cash transactions to Lunch Money. Available on TestFlight.
     author: LittleBlueBug
     lang: ios
     github: https://github.com/milanave/LunchSync
@@ -110,6 +127,13 @@
     links:
     - url: https://testflight.apple.com/join/mF8JEHqk
       label: TestFlight
+  - name: lunchsimple
+    description: Import Wealthsimple activity into your Lunch Money budgets.
+    author: Colby Hubscher
+    url: https://sr.ht/~colbyhub/lunchsimple/
+    url_label: Source
+    spotlight: /blog/2025-02-28-community-newsletter
+    discord: https://discord.com/channels/842337014556262411/1344360183597629460
   - name: LunchSync SG
     description: Sync bank transactions from Singapore banks to Lunch Money.
     author: Shyam
@@ -159,13 +183,8 @@
     spotlight: /blog/2026-04-14-community-newsletter
 - id: notifications
   icon: 🔔
-  title: Notifications, Widgets & Bots
+  title: Notifiers & Bots
   tools:
-  - name: Lunch Money iOS Widget
-    description: An iOS widget for Lunch Money statuses, giving you a budget overview at a glance.
-    author: Bernd Salewski
-    lang: ios
-    github: https://github.com/berndsalewski/lunch-money-widget
   - name: LunchMoneyBudgetNotifier
     description: Retrieve current credit card balances and send push notifications on balance changes.
     author: James Hansen
@@ -216,15 +235,6 @@
     lang: cli
     github: https://github.com/Rshep3087/lunchtui
     spotlight: /blog/2025-06-30-community-newsletter
-  - name: lunch-buddy
-    description: Track your Lunch Money budget progress at a glance with this Progressive Web App.
-    author: Adam Stiskala
-    lang: pwa
-    github: https://github.com/astiskala/lunch-buddy
-    url: https://lunch-buddy.app/
-    url_label: Try it
-    spotlight: /blog/2026-02-10-community-newsletter
-    discord: https://discord.com/channels/842337014556262411/1470488793391038485
   - name: Kids Companion App
     description: Help kids learn to be better savers with this companion app for Lunch Money.
     lang: web
@@ -255,29 +265,6 @@
     author: Maxime Cattet & Zeb Pykosz
     url: https://www.raycast.com/oppenheimer/lunchmoney
     url_label: Raycast Store
-- id: mcp-servers
-  icon: 🤖
-  title: MCP Servers
-  description: Connect AI assistants like Claude to your Lunch Money data using the Model Context Protocol. Chat with AI about
-    your spending and budget habits. <a href="https://discord.com/channels/842337014556262411/1425305869813547030" target="_blank"
-    class="no-dec">Join the AI Tools channel on Discord</a>.
-  tools:
-  - name: lunchmoney-mcp-server
-    description: A Model Context Protocol server that connects Claude Desktop to your Lunch Money data. Now based on the v2
-      API.
-    author: Levi Pols
-    github: https://github.com/leafeye/lunchmoney-mcp-v2
-    spotlight: /blog/2025-05-01-community-newsletter
-  - name: lunchmoney-mcp
-    description: A Model Context Protocol server that covers 100% of the Lunch Money API functionality with easy install and
-      logging.
-    author: akutishevsky
-    github: https://github.com/akutishevsky/lunchmoney-mcp
-    spotlight: /blog/2025-10-09-community-newsletter
-  - name: lunchmoney-mcp-v2
-    description: MCP server built on the official Lunch Money v2 SDK.
-    author: Conner Burge
-    github: https://github.com/ConnorDBurge/lunchmoney-mcp-v2
 - id: non-open-source
   icon: 🔗
   title: Other Notable Tools
