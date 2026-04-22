@@ -241,7 +241,7 @@
       discord: https://discord.com/channels/842337014556262411/1344360183597629460
 
     - name: LunchSync SG
-      description: Sync bank transactions from Singapore banks to Lunch Money.
+      description: Sync bank transactions from Singapore banks into Lunch Money.
       author: Shyam
       github: https://github.com/shyamsundar2007/lunchsync-sg
 
