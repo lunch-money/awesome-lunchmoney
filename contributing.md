@@ -1,52 +1,118 @@
-We appreciate and recognize all the members of the Lunch Money community that have contributed projects.  
+We appreciate and recognize all the members of the Lunch Money community that have contributed projects.
 
-If you've built something that you'd like to share with the community please feel free to add it to this collection following these guidelines.
+If you've built something you'd like to share with the community, please feel free to add it following these guidelines.
 
 
 # Contribution Guidelines
 
-**To add, remove, or change the curated list:**, submit a pull request
-- follow the [Pull Request template](./PR_TEMPLATE.md) 
-- add the reason why the resource is worth being added 
+**To add, remove, or change an entry:** submit a pull request that edits [`data/tools.yml`](./data/tools.yml).
 
-To set this list apart from and complement the official [Lunch Money API](https://lunchmoney.dev) documentation, this repo is a specially curated list for high-quality, actively maintained resources.
-- Please contribute links to packages/projects you have used or are familiar with. This will help ensure high-quality entries.
-- Add one resource per Pull Request.
-- Search existing resources before making a new one, as yours may be a duplicate.
-- Enforce this formatting : * [resource-name](http://link-to-the-resource-repo.com/) - A short description ends with a period.
-- Keep descriptions clear, concise, and non-promotional
-- Add a section if needed 
-   - Add the section description.
-   - Add the section title to Table of Contents.
-- Don't mention Lunch Money account or API Token in the resource description as it's implied.
-- Check your spelling and grammar.
-- Remove any trailing whitespace.
+- Follow the [Pull Request template](./PR_TEMPLATE.md)
+- Add the reason why the resource is worth including
+- Do **not** edit the README catalog directly — it is generated from `data/tools.yml`
+
+## Adding a tool
+
+Open `data/tools.yml` and add a new entry under the appropriate section's `tools` list. The full set of available fields is documented at the top of that file. Required fields are `name` and `description`.
+
+**Minimal entry:**
+```yaml
+- name: my-tool
+  description: A short, clear description of what the tool does.
+  author: Your Name
+  github: https://github.com/you/my-tool
+```
+
+**All fields:**
+```yaml
+- name: my-tool
+  description: A short, clear description of what the tool does.
+  author: Your Name
+  lang: python          # js, python, go, ruby, dart, kotlin, rust, ios, android, chrome, **web**, cli, pwa
+  lang_label: Python    # optional override for the displayed tag label
+  github: https://github.com/you/my-tool
+  url: https://my-tool.example.com
+  url_label: "Try it"   # defaults to "Website"
+  discord: https://discord.com/channels/...
+  links:
+    - url: https://pypi.org/project/my-tool
+      label: "PyPI"
+```
+
+## Local workflow
+
+After editing [`data/tools.yml`](./data/tools.yml), regenerate the derived files locally and include them in your PR:
+
+```bash
+make generate
+git diff
+git add data/tools.yml README.md generated/developer_tools.yml
+```
+
+This updates:
+
+- `README.md`
+- `generated/developer_tools.yml`
+
+If you do not want to use `make`, you can run the scripts directly:
+
+```bash
+python3 scripts/validate_tools.py
+python3 scripts/export_marketing_yaml.py
+python3 scripts/generate_readme.py
+```
+
+## What happens on merge
+
+When your PR merges to `main`, GitHub Actions runs two scripts:
+
+- `scripts/generate_readme.py` — rewrites the catalog section of `README.md`
+- `scripts/export_marketing_yaml.py` — writes `generated/developer_tools.yml` for the marketing site
+
+If your PR already includes the regenerated [`generated/developer_tools.yml`](./generated/developer_tools.yml), the merge to `main` will trigger the workflow that opens or updates a PR against the marketing-site repo.
+
+If your PR only changes [`data/tools.yml`](./data/tools.yml), GitHub Actions will regenerate files in a follow-up bot commit on `main`. That path is less obvious for contributors and makes it harder to review generated changes before merge, so contributors should commit the generated files in the same PR.
+
+## Optional: local validation
+
+If you have Python 3 installed, you can validate your changes before committing:
+
+```bash
+make validate
+```
+
+To get automatic validation on every commit, install the included git hook once:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+If you don't have Python, the hook is skipped and GitHub Actions will validate your changes when you open a PR.
+
+**To install dependencies for local script use:**
+```bash
+pip install -r requirements.txt
+# or, with uv (no prior Python install required):
+uv run --with pyyaml python3 scripts/validate_tools.py
+```
 
 ## Quality standards
 
-To be on the list, github repositories should adhere to these quality standards:
+To be on the list, projects should:
 
-- Code functions as documented and expected
-- Generally useful to the wider community of Lunch Money users and/or developers
-- Actively maintained 
-  - Regular, recent commits
-  - Or, for finished projects, issues and pull requests are responded to
-- Stable or progressing toward stable
-- Thoroughly documented (README, comments, samples etc.)
-- Tests, where practical
-
+- Function as documented
+- Be generally useful to the wider Lunch Money community
+- Be actively maintained (regular commits, or issues/PRs are responded to for finished projects)
+- Be stable or progressing toward stable
+- Be thoroughly documented (README, comments, samples)
+- Include tests where practical
 
 ## Reporting issues
 
-Please open an issue if you would like to discuss anything that could be improved or have suggestions for making the list a more valuable resource. 
+Please open an issue if you'd like to discuss anything that could be improved or have suggestions for making the list more valuable.
 
-We realize sometimes projects fall into abandonment or have breaking builds for extended periods of time, so if you see that, feel free to change its listing or let us know. 
+We realize sometimes projects fall into abandonment or have breaking builds for extended periods of time. If you see that, feel free to submit a PR or open an issue.
 
-We also realize that sometimes projects are just going through transitions or are more experimental in nature. These can still be cool, but we can indicate them as transitory or experimental.
-
-Removal changes not suggested by the projects author will not be applied until they have been pending for a minimum of 1 week (7 days). 
-
-This grace window benefits projects that may be going through a temporary transition but are otherwise worthy of being on the list.
-
+Removal changes not suggested by the project's author will not be applied until they have been pending for a minimum of 1 week (7 days).
 
 Thanks everyone!

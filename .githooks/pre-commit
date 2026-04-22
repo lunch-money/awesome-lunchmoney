@@ -1,0 +1,27 @@
+#!/bin/sh
+#
+# Pre-commit hook: validate data/tools.yml if python3 is available.
+#
+# Install once with:
+#   git config core.hooksPath .githooks
+#
+# Validation is skipped gracefully when python3 is not installed —
+# GitHub Actions will catch any errors when you open a PR.
+
+# Only run if tools.yml is staged
+if ! git diff --cached --name-only | grep -q "^data/tools\.yml$"; then
+  exit 0
+fi
+
+if command -v python3 >/dev/null 2>&1; then
+  echo "Validating data/tools.yml..."
+  python3 scripts/validate_tools.py
+  if [ $? -ne 0 ]; then
+    echo ""
+    echo "Fix the errors above before committing."
+    exit 1
+  fi
+else
+  echo "Note: python3 not found — skipping local YAML validation."
+  echo "      GitHub Actions will validate your changes when you open a PR."
+fi
