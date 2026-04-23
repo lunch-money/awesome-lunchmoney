@@ -43,9 +43,6 @@ jobs:
           token: ${{ secrets.MARKETING_SITE_PAT }}
           path: marketing-site
 
-      - name: Copy generated file
-        run: cp generated/developer_tools.yml marketing-site/_data/developer_tools.yml
-
       - name: Open or update PR against marketing-site
         working-directory: marketing-site
         env:
@@ -63,6 +60,8 @@ jobs:
           else
             git checkout -b "$BRANCH"
           fi
+
+          cp ../generated/developer_tools.yml _data/developer_tools.yml
 
           git add _data/developer_tools.yml
 
