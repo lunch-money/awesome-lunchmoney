@@ -16,6 +16,7 @@ import yaml
 
 START_MARKER = "<!-- GENERATED:CATALOG:START -->"
 END_MARKER = "<!-- GENERATED:CATALOG:END -->"
+LUNCH_MONEY_BASE_URL = "https://lunchmoney.app"
 
 
 def should_include_in_readme(item):
@@ -43,6 +44,13 @@ def html_to_markdown(text):
     return text.strip()
 
 
+def readme_url(url):
+    """Return an absolute URL suitable for links rendered on GitHub."""
+    if url.startswith("/"):
+        return f"{LUNCH_MONEY_BASE_URL}{url}"
+    return url
+
+
 def render_tool(tool, indent=""):
     """Render a single tool entry as a Markdown list item with sub-bullets."""
     lines = []
@@ -68,6 +76,9 @@ def render_tool(tool, indent=""):
     # Additional links
     for link in tool.get("links", []):
         lines.append(f"{indent}  * [{link['label']}]({link['url']})")
+
+    if tool.get("spotlight"):
+        lines.append(f"{indent}  * [Spotlight Blog]({readme_url(tool['spotlight'])})")
 
     # Discord thread
     if tool.get("discord"):
