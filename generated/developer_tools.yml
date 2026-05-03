@@ -286,3 +286,11 @@
     url: https://chromewebstore.google.com/detail/lunch-money-to-projection/olmhamhfelfcccahmjkolgompiaijkhd
     url_label: Chrome Web Store
     spotlight: /blog/2026-01-12-community-newsletter
+  - name: Lunch Money × Zapier
+    description: Connect Lunch Money to 8,000+ apps without writing any code. Automate transaction workflows using triggers
+      and actions across transactions, categories, tags, accounts, budgets, and recurring items.
+    author: Lunch Money
+    official: true
+    url: https://zapier.com/apps/lunch-money/integrations
+    url_label: Zapier
+    spotlight: /blog/lunch-money-is-now-on-zapier
