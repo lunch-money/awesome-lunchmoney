@@ -146,4 +146,6 @@ These projects aren't open source, but many Lunch Money users find them helpful.
 * [LunchFlow](https://www.lunchflow.app/) - Effortlessly connect your EU and UK bank accounts to Lunch Money. Subscription-based service for automatic transaction imports. - (by Amr Awad)
   * [Discord](https://discord.com/channels/842337014556262411/1283135769933905971)
 * [Lunch Money × ProjectionLab](https://chromewebstore.google.com/detail/lunch-money-to-projection/olmhamhfelfcccahmjkolgompiaijkhd) - Chrome extension to import your account balances from Lunch Money into ProjectionLab for retirement planning. - (by Lunch Money)
+* [Lunch Money × Zapier](https://zapier.com/apps/lunch-money/integrations) -  Connect Lunch Money to 8,000+ apps without writing any code. Automate transaction workflows using triggers and actions across transactions, categories, tags, accounts, budgets, and recurring items. - (by Lunch Money)
+  * Spotlight Blog: [Lunch Money is Now on Zapier](https://lunchmoney.app/blog/lunch-money-is-now-on-zapier) 
 <!-- GENERATED:CATALOG:END -->
