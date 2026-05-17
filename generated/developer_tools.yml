@@ -29,6 +29,12 @@
     description: MCP server built on the official Lunch Money v2 SDK.
     author: Conner Burge
     github: https://github.com/ConnorDBurge/lunchmoney-mcp-v2
+  - name: lunchmoney-mcp-cloudflare
+    description: Deploys akutishevsky/lunchmoney-mcp to a Cloudflare Worker with Google OAuth, exposing it as a remote MCP
+      server so the Claude mobile app (which can't use stdio servers) can connect as a custom connector. One-command setup
+      wizard; fits within Cloudflare and Google Cloud free tiers.
+    author: bm1549
+    github: https://github.com/bm1549/lunchmoney-mcp-cloudflare
 - id: sdks
   icon: 🧱
   title: Client SDKs & API Wrappers
