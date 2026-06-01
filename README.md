@@ -41,7 +41,6 @@ Connect AI assistants like Claude to your Lunch Money data using the Model Conte
 * [lunchmoney-mcp](https://github.com/akutishevsky/lunchmoney-mcp) - A Model Context Protocol server that covers 100% of the Lunch Money API functionality with easy install and logging. - (by akutishevsky)
   * [Spotlight Blog](https://lunchmoney.app/blog/2025-10-09-community-newsletter)
 * [lunchmoney-mcp-v2](https://github.com/ConnorDBurge/lunchmoney-mcp-v2) - MCP server built on the official Lunch Money v2 SDK. - (by Conner Burge)
-* [lunchmoney-mcp-cloudflare](https://github.com/bm1549/lunchmoney-mcp-cloudflare) - Deploys akutishevsky/lunchmoney-mcp to a Cloudflare Worker with Google OAuth, exposing it as a remote MCP server so the Claude mobile app (which can't use stdio servers) can connect as a custom connector. One-command setup wizard; fits within Cloudflare and Google Cloud free tiers. - (by bm1549)
 
 ### Remote / Cloud-Deployable MCP Servers
 
@@ -167,7 +166,7 @@ Automatically categorize, enrich, and manage your existing Lunch Money transacti
 
 ## Cash Flow & Planning Tools
 
-Use your Lunch Money data to visualize cash flow and plan ahead.
+Visualize and forecast your Lunch Money cash flow to plan ahead.
 
 * [CashFlow App](https://github.com/WesleyCeraso/cashflow-app) - A web app for visualizing and projecting your Lunch Money cash flow. - (by Wesley Ceraso)
   * [Try it](https://wesleyceraso.github.io/cashflow-app/)
