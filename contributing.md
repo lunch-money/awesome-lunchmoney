@@ -45,8 +45,10 @@ If you have Python 3 installed, you can validate your changes before committing:
 
 ### Install dependencies for local script use:**
 ```bash
-pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
+
+If your system Python is flaky or `pip` is missing, creating a fresh virtual environment with a working Python install is usually the quickest fix.
 
 ### Validate your changes
 ```bash

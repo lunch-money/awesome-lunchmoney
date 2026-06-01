@@ -42,6 +42,13 @@ Connect AI assistants like Claude to your Lunch Money data using the Model Conte
   * [Spotlight Blog](https://lunchmoney.app/blog/2025-10-09-community-newsletter)
 * [lunchmoney-mcp-v2](https://github.com/ConnorDBurge/lunchmoney-mcp-v2) - MCP server built on the official Lunch Money v2 SDK. - (by Conner Burge)
 
+### Remote / Cloud-Deployable MCP Servers
+
+Run Lunch Money MCP in your own cloud so you can use it from multiple devices, including Claude mobile, without installing it everywhere.
+
+* [lunchmoney-mcp-cloudflare](https://github.com/bm1549/lunchmoney-mcp-cloudflare) - Great for people comfortable deploying to Cloudflare with Google Auth; includes a one-command setup wizard and deploys Anton's Lunch Money MCP server in your own cloud. - (by bm1549)
+* [lunch-money-k8s](https://github.com/coilyco-flight-deck/lunch-money-k8s) - Great for people comfortable deploying to Kubernetes or K3s with Helm; ships its own Lunch Money MCP server implementation for your cluster. - (by coilyco-flight-deck)
+
 ## Client SDKs & API Wrappers
 
 Official and community-built libraries to interact with the Lunch Money API in your language of choice. Looking to generate your own? Install the [Lunch Money v2 OpenAPI Spec](https://www.npmjs.com/package/@lunch-money/v2-api-spec).
@@ -51,6 +58,7 @@ Official and community-built libraries to interact with the Lunch Money API in y
 * [Lunch Money JavaScript SDK](https://github.com/lunch-money/lunch-money-js-v2) - Official JS SDK from the Lunch Money team with full TypeScript support. - (by Lunch Money)
   * [NPM](https://www.npmjs.com/package/@lunch-money/lunch-money-js-v2)
 * [lunchmoney-clients](https://github.com/juftin/lunchmoney-clients) - A framework for generating language specific SDKs for the Lunch Money API. Includes a generated Python SDK for the v2 API by Justin Flannery, author of the popular lunchable client. - (by Justin Flannery)
+* [lunchmoney-go](https://github.com/Cidan/lunchmoney-go) - A Go client library and MCP server for the Lunch Money v2 API, with full v2 coverage and OAuth2 scaffolding. - (by Cidan)
 
 ### V1 API
 
@@ -120,6 +128,8 @@ Browser bookmarks that run JavaScript to import transactions after logging in to
 
 Automatically categorize, enrich, and manage your existing Lunch Money transactions.
 
+* [lunchmoney-auto-categorize](https://github.com/juftin/lunchable-primelunch) - Categorize your LunchMoney transactions using top AI providers. Bring your own API key! - (by Justin Flannery)
+  * [Spotlight Blog](https://lunchmoney.app/blog/2026-01-12-community-newsletter)
 * [lunchmoney-amazon](https://github.com/iloveitaly/lunchmoney-amazon) - Categorize and add order numbers to Amazon transactions in Lunch Money. - (by Michael Bianco)
   * [Spotlight Blog](https://lunchmoney.app/blog/2025-05-01-community-newsletter)
 * [lunchable-primelunch](https://github.com/juftin/lunchable-primelunch) - Amazon transaction updater for Lunch Money, built in Python. - (by Justin Flannery)
@@ -153,6 +163,16 @@ Automatically categorize, enrich, and manage your existing Lunch Money transacti
   * [Try it](https://lunch-money-kids.netlify.app/)
   * [Spotlight Blog](https://lunchmoney.app/blog/2026-03-10-community-newsletter)
   * [Discord](https://discord.com/channels/842337014556262411/1480708810443329666)
+
+## Cash Flow & Planning Tools
+
+Use your Lunch Money data to visualize cash flow and plan ahead.
+
+* [CashFlow App](https://github.com/WesleyCeraso/cashflow-app) - A web app for visualizing and projecting your Lunch Money cash flow. - (by Wesley Ceraso)
+  * [Try it](https://wesleyceraso.github.io/cashflow-app/)
+  * [Spotlight Blog](https://lunchmoney.app/blog/2025-09-11-community-newsletter)
+* [Meal Ticket](https://github.com/varontron/meal-ticket) - A web app for tracking Lunch Money cash flow. - (by varontron)
+  * [Try it](https://mealticket.varontron.com/meal-ticket-sigma.vercel.app)
 
 ## Extensions & Keyboard Shortcuts
 
