@@ -29,12 +29,21 @@
     description: MCP server built on the official Lunch Money v2 SDK.
     author: Conner Burge
     github: https://github.com/ConnorDBurge/lunchmoney-mcp-v2
-  - name: lunchmoney-mcp-cloudflare
-    description: Deploys akutishevsky/lunchmoney-mcp to a Cloudflare Worker with Google OAuth, exposing it as a remote MCP
-      server so the Claude mobile app (which can't use stdio servers) can connect as a custom connector. One-command setup
-      wizard; fits within Cloudflare and Google Cloud free tiers.
-    author: bm1549
-    github: https://github.com/bm1549/lunchmoney-mcp-cloudflare
+  subsections:
+  - title: Remote / Cloud-Deployable MCP Servers
+    description: Run Lunch Money MCP in your own cloud so you can use it from multiple devices, including Claude mobile, without
+      installing it everywhere.
+    tools:
+    - name: lunchmoney-mcp-cloudflare
+      description: Great for people comfortable deploying to Cloudflare with Google Auth; includes a one-command setup wizard
+        and deploys Anton's Lunch Money MCP server in your own cloud.
+      author: bm1549
+      github: https://github.com/bm1549/lunchmoney-mcp-cloudflare
+    - name: lunch-money-k8s
+      description: Great for people comfortable deploying to Kubernetes or K3s with Helm; ships its own Lunch Money MCP server
+        implementation for your cluster.
+      author: coilyco-flight-deck
+      github: https://github.com/coilyco-flight-deck/lunch-money-k8s
 - id: sdks
   icon: 🧱
   title: Client SDKs & API Wrappers
@@ -59,6 +68,11 @@
       author: Justin Flannery
       lang: python
       github: https://github.com/juftin/lunchmoney-clients
+    - name: lunchmoney-go
+      description: A Go client library and MCP server for the Lunch Money v2 API, with full v2 coverage and OAuth2 scaffolding.
+      author: Cidan
+      lang: go
+      github: https://github.com/Cidan/lunchmoney-go
 - id: mobile-apps
   icon: 📱
   title: Open Source Mobile Apps
@@ -170,6 +184,12 @@
   title: Transaction Update Tools
   description: Automatically categorize, enrich, and manage your existing Lunch Money transactions.
   tools:
+  - name: lunchmoney-auto-categorize
+    description: Categorize your LunchMoney transactions using top AI providers. Bring your own API key!
+    author: Justin Flannery
+    lang: python
+    github: https://github.com/juftin/lunchable-primelunch
+    spotlight: /blog/2026-01-12-community-newsletter
   - name: lunchmoney-amazon
     description: Categorize and add order numbers to Amazon transactions in Lunch Money.
     author: Michael Bianco
@@ -250,6 +270,28 @@
     url_label: Try it
     spotlight: /blog/2026-03-10-community-newsletter
     discord: https://discord.com/channels/842337014556262411/1480708810443329666
+- id: cash-flow-planning
+  icon: 📈
+  title: Cash Flow & Planning Tools
+  description: Visualize and forecast your Lunch Money cash flow to plan ahead.
+  tools:
+  - name: CashFlow App
+    description: A web app for visualizing and projecting your Lunch Money cash flow.
+    author: Wesley Ceraso
+    lang: web
+    lang_label: Web App
+    github: https://github.com/WesleyCeraso/cashflow-app
+    url: https://wesleyceraso.github.io/cashflow-app/
+    url_label: Try it
+    spotlight: /blog/2025-09-11-community-newsletter
+  - name: Meal Ticket
+    description: A web app for tracking Lunch Money cash flow.
+    author: varontron
+    lang: web
+    lang_label: Web App
+    github: https://github.com/varontron/meal-ticket
+    url: https://mealticket.varontron.com/meal-ticket-sigma.vercel.app
+    url_label: Try it
 - id: extensions
   icon: ⚡
   title: Extensions & Keyboard Shortcuts
