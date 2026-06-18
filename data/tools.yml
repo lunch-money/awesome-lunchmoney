@@ -445,12 +445,19 @@
   description: These projects aren't open source, but many Lunch Money users find them helpful.
   tools:
     - name: LunchFlow
-      description: Effortlessly connect your EU and UK bank accounts to Lunch Money. Subscription-based service for automatic transaction imports.
+      description: A subscription based service for importing transactions from EU and UK bank accounts into Lunch Money.
       author: Amr Awad
       url: https://www.lunchflow.app/
       url_label: "Website"
       spotlight: /blog/2024-12-27-community-newsletter
       discord: https://discord.com/channels/842337014556262411/1283135769933905971
+
+    - name: Synci
+      description: Another option to connect your EU and UK bank accounts to Lunch Money. 
+      author: Matias Tonning
+      url: https://www.synci.io/destinations/lunch-money
+      url_label: "Website"
+      spotlight: /blog/2026-05-14-community-newsletter
 
     - name: Lunch Money × ProjectionLab
       description: Chrome extension to import your account balances from Lunch Money into ProjectionLab for retirement planning.

@@ -41,19 +41,32 @@ Open `data/tools.yml` and add a new entry under the appropriate section's `tools
 
 ## Optional: local validation
 
-If you have Python 3 installed, you can validate your changes before committing:
+If you have Python 3 installed, you can validate your changes before committing.
 
-### Install dependencies for local script use:**
+### Recommended: use `venv`
+
+Creating a small virtual environment keeps the repo self-contained and avoids touching your system Python:
+
 ```bash
-python3 -m pip install -r requirements.txt
-```
-
-If your system Python is flaky or `pip` is missing, creating a fresh virtual environment with a working Python install is usually the quickest fix.
-
-### Validate your changes
-```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
 make validate
 ```
+
+When you're done, you can leave the environment with `deactivate`.
+
+### If you prefer `conda`
+
+If `conda` is already part of your workflow, this repo works fine there too:
+
+```bash
+conda create -y -n awesome-lunchmoney python=3.12 pyyaml
+conda activate awesome-lunchmoney
+make validate
+```
+
+You can still use your system Python if you prefer, but a virtual environment is usually the smoothest option.
 
 ### Generate and commit the updated readme and marketing page
 ```bash
