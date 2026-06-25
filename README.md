@@ -77,7 +77,7 @@ A quick note: V1 is still fully supported, but we recommend the [V2 API](https:/
 Access and manage your Lunch Money data on the go with these open source mobile apps. Or try [the official Lunch Money Mobile App](https://lunchmoney.app/download).
 
 * [BBudget](https://github.com/cleansoftlv/bbudget) - A fast, mobile-first companion web app. Provides simple UI for manual transaction input and review, perfect for less advanced users. - (by Alex Shakhov)
-  * [Try it](https://www.bbudget.com)
+  * [Try it](https://www.bbudget.app/)
   * [Spotlight Blog](https://lunchmoney.app/blog/2025-06-30-community-newsletter)
 * [Lunch Money Companion](https://github.com/Rodrigolmti/lunch_money_companion) - A companion Android application for Lunch Money, available on the Google Play Store. - (by Rodrigo Lopes)
   * [Google Play](https://play.google.com/store/apps/details?id=com.rodrigolmti.lunch.money.companion)
