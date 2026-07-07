@@ -12,7 +12,7 @@
 #   name        (required) — Display name
 #   description (required) — Short description
 #   author      (optional) — Creator name
-#   lang        (optional) — Language/platform tag (js, python, go, ruby, dart, kotlin, rust, ios, android, chrome, web, cli, pwa)
+#   lang        (optional) — Language/platform tag (js, python, go, ruby, php, dart, kotlin, rust, ios, android, chrome, web, cli, pwa)
 #   lang_label  (optional) — Override the displayed label for the lang tag (e.g. "TypeScript")
 #   github      (optional) — GitHub URL
 #   url         (optional) — Live demo, website, or app store URL
@@ -40,34 +40,55 @@
     - name: lunchmoney-mcp-server
       description: A Model Context Protocol server that connects Claude Desktop to your Lunch Money data. Now based on the v2 API.
       author: Levi Pols
+      lang: js
+      lang_label: TypeScript
       github: https://github.com/leafeye/lunchmoney-mcp-v2
       spotlight: /blog/2025-05-01-community-newsletter
 
     - name: lunchmoney-mcp
       description: A Model Context Protocol server that covers 100% of the Lunch Money API functionality with easy install and logging.
       author: akutishevsky
+      lang: js
+      lang_label: TypeScript
       github: https://github.com/akutishevsky/lunchmoney-mcp
       spotlight: /blog/2025-10-09-community-newsletter
 
     - name: lunchmoney-mcp-v2
       description: MCP server built on the official Lunch Money v2 SDK.
       author: Conner Burge
+      lang: js
+      lang_label: TypeScript
       github: https://github.com/ConnorDBurge/lunchmoney-mcp-v2
 
   subsections:
-    - title: Remote / Cloud-Deployable MCP Servers
+    - title: Remote, Hosted, and Self-Hosted MCP Servers
       description: >-
-        Run Lunch Money MCP in your own cloud so you can use it from multiple devices, including Claude mobile, without installing it everywhere.
+        Run Lunch Money MCP from your own infrastructure when you want mobile or web access, a stable endpoint shared across devices, or scheduled automation.
+        These projects differ in where they run, how access is controlled, and whether they are meant for one Lunch Money account or multiple users.
       tools:
         - name: lunchmoney-mcp-cloudflare
-          description: Great for people comfortable deploying to Cloudflare with Google Auth; includes a one-command setup wizard and deploys Anton's Lunch Money MCP server in your own cloud.
+          description: Cloudflare Worker deployment of Anton's Lunch Money MCP server with Google sign-in and per-user Lunch Money API token onboarding.
           author: bm1549
+          lang: js
+          lang_label: TypeScript
           github: https://github.com/bm1549/lunchmoney-mcp-cloudflare
 
         - name: lunch-money-k8s
-          description: Great for people comfortable deploying to Kubernetes or K3s with Helm; ships its own Lunch Money MCP server implementation for your cluster.
+          description: Helm-deployable Python MCP server for Kubernetes and K3s, designed for private-network access, scheduled jobs, and self-managed ingress security.
           author: coilyco-flight-deck
+          lang: python
+          lang_label: Python
           github: https://github.com/coilyco-flight-deck/lunch-money-k8s
+
+        - name: lunchmoney-mcp-server-oauth
+          description: Single-user, self-hostable OAuth 2.1 wrapper around Anton's Lunch Money MCP server for Claude custom connectors.
+          author: Squixx
+          lang: js
+          lang_label: Node.js
+          github: https://github.com/Squixx/lunchmoney-mcp-server-oauth
+          links:
+            - url: https://github.com/Squixx/lunchmoney-mcp-server-oauth/pkgs/container/lunchmoney-mcp
+              label: "Container image"
 
 - id: sdks
   icon: "🧱"
@@ -221,6 +242,8 @@
     - name: RBC-LunchMoney
       description: Import RBC (Royal Bank of Canada) transactions into Lunch Money.
       author: Mykal Machon
+      lang: js
+      lang_label: TypeScript
       github: https://github.com/MykalMachon/RBC-LunchMoney
 
     - name: lunchmoney-fintoc-sync
@@ -239,6 +262,7 @@
     - name: td-lunchmoney-importer
       description: Import a TD Bank QFX multi-account file directly to Lunch Money.
       author: Max
+      lang: python
       github: https://github.com/thehedgefrog/td-lunchmoney-importer
       spotlight: /blog/2025-03-31-community-newsletter
 
@@ -264,11 +288,14 @@
     - name: LunchSync SG
       description: Sync bank transactions from Singapore banks to Lunch Money.
       author: Shyam
+      lang: python
       github: https://github.com/shyamsundar2007/lunchsync-sg
 
     - name: assorted-to-lunchmoney
       description: Import transactions from Japanese banks via Money Forward.
       author: Willie Loyd Tandingan
+      lang: js
+      lang_label: TypeScript
       github: https://github.com/n3v3rf411/assorted-to-lunchmoney
 
   subsections:
@@ -287,6 +314,7 @@
         - name: CFNA Credit Card → Lunch Money
           description: Import CFNA (Firestone-branded credit card) transactions to Lunch Money.
           author: JP@LunchMoney.app
+          lang: js
           github: https://github.com/jpjpjp/cfna-to-lunchmoney
           spotlight: /blog/2026-03-10-community-newsletter
 
@@ -319,6 +347,8 @@
     - name: email-to-lunch-money
       description: Track email receipts for Amazon, Lyft and others to update Lunch Money transactions.
       author: Evan
+      lang: js
+      lang_label: TypeScript
       github: https://github.com/evanpurkhiser/email-to-lunchmoney/
       spotlight: /blog/2026-04-14-community-newsletter
 
@@ -329,11 +359,14 @@
     - name: LunchMoneyBudgetNotifier
       description: Retrieve current credit card balances and send push notifications on balance changes.
       author: James Hansen
+      lang: php
+      lang_label: PHP
       github: https://github.com/jameshansen/LunchMoneyBudgetNotifier
 
     - name: lonchera
       description: A Telegram bot that notifies users of new transactions with tools to view and manage budgets. Includes optional AI-powered transaction categorization.
       author: Cristian Knur
+      lang: python
       github: https://github.com/casidiablo/lonchera
       spotlight: /blog/2024-11-29-community-newsletter
       discord: https://discord.com/channels/842337014556262411/1311765488140816484
@@ -345,11 +378,13 @@
     - name: lunchmoney-t212
       description: Synchronize Trading212 investment values with Lunch Money automatically.
       author: Alin Ali Hassan
+      lang: python
       github: https://github.com/alinalihassan/lunchmoney-t212
 
     - name: lunchmoney-assets
       description: Update real estate and car values in Lunch Money with current market data.
       author: Michael Bianco
+      lang: python
       github: https://github.com/iloveitaly/lunchmoney-assets
 
 - id: visualization
@@ -369,6 +404,8 @@
     - name: TRMNL Plugin
       description: Lunch Money plugin for TRMNL, an e-ink dashboard. See your budget on a beautiful ambient display.
       author: Ryan Kulp
+      lang: web
+      lang_label: Web Plugin
       github: https://github.com/usetrmnl/plugins/tree/master
       spotlight: /blog/community-spotlight-trmnl
       links:
@@ -378,7 +415,7 @@
     - name: lunchtui
       description: A beautiful command-line interface for managing your Lunch Money data right from the terminal.
       author: Ryan Sheppard
-      lang: cli
+      lang: go
       github: https://github.com/Rshep3087/lunchtui
       spotlight: /blog/2025-06-30-community-newsletter
 

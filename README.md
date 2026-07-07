@@ -42,12 +42,14 @@ Connect AI assistants like Claude to your Lunch Money data using the Model Conte
   * [Spotlight Blog](https://lunchmoney.app/blog/2025-10-09-community-newsletter)
 * [lunchmoney-mcp-v2](https://github.com/ConnorDBurge/lunchmoney-mcp-v2) - MCP server built on the official Lunch Money v2 SDK. - (by Conner Burge)
 
-### Remote / Cloud-Deployable MCP Servers
+### Remote, Hosted, and Self-Hosted MCP Servers
 
-Run Lunch Money MCP in your own cloud so you can use it from multiple devices, including Claude mobile, without installing it everywhere.
+Run Lunch Money MCP from your own infrastructure when you want mobile or web access, a stable endpoint shared across devices, or scheduled automation. These projects differ in where they run, how access is controlled, and whether they are meant for one Lunch Money account or multiple users.
 
-* [lunchmoney-mcp-cloudflare](https://github.com/bm1549/lunchmoney-mcp-cloudflare) - Great for people comfortable deploying to Cloudflare with Google Auth; includes a one-command setup wizard and deploys Anton's Lunch Money MCP server in your own cloud. - (by bm1549)
-* [lunch-money-k8s](https://github.com/coilyco-flight-deck/lunch-money-k8s) - Great for people comfortable deploying to Kubernetes or K3s with Helm; ships its own Lunch Money MCP server implementation for your cluster. - (by coilyco-flight-deck)
+* [lunchmoney-mcp-cloudflare](https://github.com/bm1549/lunchmoney-mcp-cloudflare) - Cloudflare Worker deployment of Anton's Lunch Money MCP server with Google sign-in and per-user Lunch Money API token onboarding. - (by bm1549)
+* [lunch-money-k8s](https://github.com/coilyco-flight-deck/lunch-money-k8s) - Helm-deployable Python MCP server for Kubernetes and K3s, designed for private-network access, scheduled jobs, and self-managed ingress security. - (by coilyco-flight-deck)
+* [lunchmoney-mcp-server-oauth](https://github.com/Squixx/lunchmoney-mcp-server-oauth) - Single-user, self-hostable OAuth 2.1 wrapper around Anton's Lunch Money MCP server for Claude custom connectors. - (by Squixx)
+  * [Container image](https://github.com/Squixx/lunchmoney-mcp-server-oauth/pkgs/container/lunchmoney-mcp)
 
 ## Client SDKs & API Wrappers
 
