@@ -116,6 +116,7 @@ Import transactions from banks and services that aren't natively supported by Lu
   * [Discord](https://discord.com/channels/842337014556262411/1344360183597629460)
 * [LunchSync SG](https://github.com/shyamsundar2007/lunchsync-sg) - Sync bank transactions from Singapore banks to Lunch Money. - (by Shyam)
 * [assorted-to-lunchmoney](https://github.com/n3v3rf411/assorted-to-lunchmoney) - Import transactions from Japanese banks via Money Forward. - (by Willie Loyd Tandingan)
+* [seb-lunchmoney-sync](https://github.com/klokie/seb-lunchmoney-sync) - Sync transactions from European banks to Lunch Money through Enable Banking (PSD2). Tested with SEB Sweden; other supported institutions can be configured. - (by Daniel Grossfeld)
 
 ### Bookmarklets
 
