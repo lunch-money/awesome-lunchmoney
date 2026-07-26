@@ -298,6 +298,12 @@
       lang_label: TypeScript
       github: https://github.com/n3v3rf411/assorted-to-lunchmoney
 
+    - name: seb-lunchmoney-sync
+      description: Sync transactions from European banks to Lunch Money through Enable Banking (PSD2). Tested with SEB Sweden; other supported institutions can be configured.
+      author: Daniel Grossfeld
+      lang: python
+      github: https://github.com/klokie/seb-lunchmoney-sync
+
   subsections:
     - title: Bookmarklets
       description: >-
