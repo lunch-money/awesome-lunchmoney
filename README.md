@@ -96,7 +96,7 @@ Access and manage your Lunch Money data on the go with these open source mobile 
   * [Try it](https://lunch-buddy.app/)
   * [Spotlight Blog](https://lunchmoney.app/blog/2026-02-10-community-newsletter)
   * [Discord](https://discord.com/channels/842337014556262411/1470488793391038485)
-* [lunchwidget](https://github.com/SauravSuresh/lunchwidget) - A home-screen widget showing an adaptive daily spending allowance (remaining budget divided by days left in the period), with two-tap quick add. Also handles split bills tagged per person, repayment matching, and account transfers. - (by Saurav Suresh)
+* [lunchwidget](https://github.com/SauravSuresh/lunchwidget) - An Android home-screen widget that turns the remaining monthly budget into an adaptive daily spending allowance and supports quick transaction entry, split bills, repayments, and account transfers. - (by Saurav Suresh)
 
 ## Transaction Import Tools
 
