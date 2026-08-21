@@ -132,6 +132,13 @@
     url_label: Try it
     spotlight: /blog/2026-02-10-community-newsletter
     discord: https://discord.com/channels/842337014556262411/1470488793391038485
+  - name: lunchwidget
+    description: A home-screen widget showing an adaptive daily spending allowance (remaining budget divided by days left
+      in the period), with two-tap quick add. Also handles split bills tagged per person, repayment matching, and account
+      transfers.
+    author: Saurav Suresh
+    lang: android
+    github: https://github.com/SauravSuresh/lunchwidget
 - id: import-tools
   icon: 📥
   title: Transaction Import Tools
