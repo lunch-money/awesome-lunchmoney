@@ -97,7 +97,7 @@ Access and manage your Lunch Money data on the go with these open source mobile 
   * [Spotlight Blog](https://lunchmoney.app/blog/2026-02-10-community-newsletter)
   * [Discord](https://discord.com/channels/842337014556262411/1470488793391038485)
 * [lunchwidget](https://github.com/SauravSuresh/lunchwidget) - An Android home-screen widget that turns the remaining monthly budget into an adaptive daily spending allowance and supports quick transaction entry, split bills, repayments, and account transfers. - (by Saurav Suresh)
-* [Leftover Lunch Money](https://github.com/john-cabaj/leftover-lunch-money) - An iOS home screen widget that shows the true leftover money to spend (or save) in a given budget period, along with a list of recent unreviewed transactions. Allows you to stay close to real-time on your budget. - (by John Cabaj)
+* [Leftover Lunch Money](https://github.com/john-cabaj/leftover-lunch-money) - An iOS home-screen widget showing money left in the current or previous budget period and recent unreviewed transactions. - (by John Cabaj)
 
 ## Transaction Import Tools
 
