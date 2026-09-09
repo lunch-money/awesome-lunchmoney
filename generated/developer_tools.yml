@@ -138,6 +138,12 @@
     author: Saurav Suresh
     lang: android
     github: https://github.com/SauravSuresh/lunchwidget
+  - name: Leftover Lunch Money
+    description: An iOS home-screen widget showing money left in the current or previous budget period and recent unreviewed
+      transactions.
+    author: John Cabaj
+    lang: ios
+    github: https://github.com/john-cabaj/leftover-lunch-money
 - id: import-tools
   icon: 📥
   title: Transaction Import Tools
