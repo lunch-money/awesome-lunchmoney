@@ -153,6 +153,8 @@ Automatically categorize, enrich, and manage your existing Lunch Money transacti
 
 * [lunchmoney-t212](https://github.com/alinalihassan/lunchmoney-t212) - Synchronize Trading212 investment values with Lunch Money automatically. - (by Alin Ali Hassan)
 * [lunchmoney-assets](https://github.com/iloveitaly/lunchmoney-assets) - Update real estate and car values in Lunch Money with current market data. - (by Michael Bianco)
+* [lunchmoney-ha](https://github.com/plain-and-simple/lunchmoney-ha) - Home Assistant custom integration (HACS) that exposes Lunch Money account balances, net worth, and bank-connection health as sensors. Config flow; API token stays in the user's Home Assistant — no intermediary server. Optional button to trigger a bank refresh. - (by Chandler Young)
+  * [Website](https://plainandsimple.app/apps/lunchmoney-ha)
 
 ## Visualization Tools
 
