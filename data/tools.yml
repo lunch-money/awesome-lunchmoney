@@ -66,6 +66,14 @@
         Run Lunch Money MCP from your own infrastructure when you want mobile or web access, a stable endpoint shared across devices, or scheduled automation.
         These projects differ in where they run, how access is controlled, and whether they are meant for one Lunch Money account or multiple users.
       tools:
+        - name: Lunch Money for Agents
+          description: Unofficial, open-source hosted MCP integration for reading Lunch Money transactions, accounts, and budgets with AI agents and MCP-compatible tools, using browser-based account linking.
+          author: n3wth
+          lang: js
+          lang_label: TypeScript
+          github: https://github.com/n3wth/lunchmoney-mcp
+          url: https://lunchmoney.sh
+
         - name: lunchmoney-mcp-cloudflare
           description: Cloudflare Worker deployment of Anton's Lunch Money MCP server with Google sign-in and per-user Lunch Money API token onboarding.
           author: bm1549

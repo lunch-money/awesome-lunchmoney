@@ -46,6 +46,8 @@ Connect AI assistants like Claude to your Lunch Money data using the Model Conte
 
 Run Lunch Money MCP from your own infrastructure when you want mobile or web access, a stable endpoint shared across devices, or scheduled automation. These projects differ in where they run, how access is controlled, and whether they are meant for one Lunch Money account or multiple users.
 
+* [Lunch Money for Agents](https://github.com/n3wth/lunchmoney-mcp) - Unofficial, open-source hosted MCP integration for reading Lunch Money transactions, accounts, and budgets with AI agents and MCP-compatible tools, using browser-based account linking. - (by n3wth)
+  * [Website](https://lunchmoney.sh)
 * [lunchmoney-mcp-cloudflare](https://github.com/bm1549/lunchmoney-mcp-cloudflare) - Cloudflare Worker deployment of Anton's Lunch Money MCP server with Google sign-in and per-user Lunch Money API token onboarding. - (by bm1549)
 * [lunch-money-k8s](https://github.com/coilyco-flight-deck/lunch-money-k8s) - Helm-deployable Python MCP server for Kubernetes and K3s, designed for private-network access, scheduled jobs, and self-managed ingress security. - (by coilyco-flight-deck)
 * [lunchmoney-mcp-server-oauth](https://github.com/Squixx/lunchmoney-mcp-server-oauth) - Single-user, self-hostable OAuth 2.1 wrapper around Anton's Lunch Money MCP server for Claude custom connectors. - (by Squixx)
