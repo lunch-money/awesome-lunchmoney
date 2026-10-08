@@ -333,6 +333,12 @@
     lang: go
     github: https://github.com/Rshep3087/lunchtui
     spotlight: /blog/2025-06-30-community-newsletter
+  - name: lunchmoney-cli
+    description: A Rust CLI for the Lunch Money v2 API with terminal tables, JSON output for scripts and agents, monthly budget
+      views, and optional AI-assisted transaction review and account chat.
+    author: Joe Hoyle
+    lang: rust
+    github: https://github.com/joehoyle/lunchmoney-cli
   - name: Kids Companion App
     description: Help kids learn to be better savers with this companion app for Lunch Money.
     lang: web

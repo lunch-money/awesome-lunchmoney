@@ -168,6 +168,7 @@ Automatically categorize, enrich, and manage your existing Lunch Money transacti
   * [Spotlight Blog](https://lunchmoney.app/blog/community-spotlight-trmnl)
 * [lunchtui](https://github.com/Rshep3087/lunchtui) - A beautiful command-line interface for managing your Lunch Money data right from the terminal. - (by Ryan Sheppard)
   * [Spotlight Blog](https://lunchmoney.app/blog/2025-06-30-community-newsletter)
+* [lunchmoney-cli](https://github.com/joehoyle/lunchmoney-cli) - A Rust CLI for the Lunch Money v2 API with terminal tables, JSON output for scripts and agents, monthly budget views, and optional AI-assisted transaction review and account chat. - (by Joe Hoyle)
 * [Kids Companion App](https://github.com/H1D/lunch-money-kids-companion) - Help kids learn to be better savers with this companion app for Lunch Money.
   * [Try it](https://lunch-money-kids.netlify.app/)
   * [Spotlight Blog](https://lunchmoney.app/blog/2026-03-10-community-newsletter)
