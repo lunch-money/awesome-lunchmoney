@@ -447,14 +447,14 @@
           label: "Docs"
 
     - name: lunchtui
-      description: A beautiful command-line interface for managing your Lunch Money data right from the terminal.
+      description: An interactive terminal interface for visually browsing and managing Lunch Money accounts, transactions, budgets, and recurring expenses.
       author: Ryan Sheppard
       lang: go
       github: https://github.com/Rshep3087/lunchtui
       spotlight: /blog/2025-06-30-community-newsletter
 
     - name: lunchmoney-cli
-      description: A Rust CLI for the Lunch Money v2 API with terminal tables, JSON output for scripts and agents, monthly budget views, and optional AI-assisted transaction review and account chat.
+      description: A command-oriented Rust CLI for the Lunch Money v2 API, with scriptable JSON output, monthly budget views, and optional AI-assisted transaction review and account chat.
       author: Joe Hoyle
       lang: rust
       github: https://github.com/joehoyle/lunchmoney-cli
