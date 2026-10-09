@@ -214,6 +214,11 @@
     author: Daniel Grossfeld
     lang: python
     github: https://github.com/klokie/seb-lunchmoney-sync
+  - name: lunchmoney-venmo-track
+    description: Automatically cash out Venmo balance and sync transaction details to Lunch Money.
+    author: Michael Bianco
+    lang: python
+    github: https://github.com/iloveitaly/lunchmoney-venmo-track
   subsections:
   - title: Bookmarklets
     description: Browser bookmarks that run JavaScript to import transactions after logging in to your bank's website. Don't
@@ -262,6 +267,11 @@
     lang_label: TypeScript
     github: https://github.com/evanpurkhiser/email-to-lunchmoney/
     spotlight: /blog/2026-04-14-community-newsletter
+  - name: lunchmoney-transaction-enhancer
+    description: Enrich Lunch Money transactions using regex extraction rules.
+    author: Michael Bianco
+    lang: python
+    github: https://github.com/iloveitaly/lunchmoney-transaction-enhancer
 - id: notifications
   icon: 🔔
   title: Notifiers & Bots

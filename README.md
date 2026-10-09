@@ -121,6 +121,7 @@ Import transactions from banks and services that aren't natively supported by Lu
 * [LunchSync SG](https://github.com/shyamsundar2007/lunchsync-sg) - Sync bank transactions from Singapore banks to Lunch Money. - (by Shyam)
 * [assorted-to-lunchmoney](https://github.com/n3v3rf411/assorted-to-lunchmoney) - Import transactions from Japanese banks via Money Forward. - (by Willie Loyd Tandingan)
 * [seb-lunchmoney-sync](https://github.com/klokie/seb-lunchmoney-sync) - Sync transactions from European banks to Lunch Money through Enable Banking (PSD2). Tested with SEB Sweden; other supported institutions can be configured. - (by Daniel Grossfeld)
+* [lunchmoney-venmo-track](https://github.com/iloveitaly/lunchmoney-venmo-track) - Automatically cash out Venmo balance and sync transaction details to Lunch Money. - (by Michael Bianco)
 
 ### Bookmarklets
 
@@ -143,6 +144,7 @@ Automatically categorize, enrich, and manage your existing Lunch Money transacti
   * [Spotlight Blog](https://lunchmoney.app/blog/2026-01-12-community-newsletter)
 * [email-to-lunch-money](https://github.com/evanpurkhiser/email-to-lunchmoney/) - Track email receipts for Amazon, Lyft and others to update Lunch Money transactions. - (by Evan)
   * [Spotlight Blog](https://lunchmoney.app/blog/2026-04-14-community-newsletter)
+* [lunchmoney-transaction-enhancer](https://github.com/iloveitaly/lunchmoney-transaction-enhancer) - Enrich Lunch Money transactions using regex extraction rules. - (by Michael Bianco)
 
 ## Notifiers & Bots
 
