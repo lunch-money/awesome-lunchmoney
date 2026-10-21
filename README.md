@@ -206,4 +206,6 @@ These projects aren't open source, but many Lunch Money users find them helpful.
   * [Spotlight Blog](https://lunchmoney.app/blog/2026-01-12-community-newsletter)
 * [Lunch Money × Zapier](https://zapier.com/apps/lunch-money/integrations) - Connect Lunch Money to 8,000+ apps without writing any code. Automate transaction workflows using triggers and actions across transactions, categories, tags, accounts, budgets, and recurring items. - (by Lunch Money)
   * [Spotlight Blog](https://lunchmoney.app/blog/lunch-money-is-now-on-zapier)
+* [Receipt Rabbit](https://apps.apple.com/us/app/receipt-rabbit-expense-tracker/id6789563930) - An iPhone receipt scanner that categorizes each line item, splits the matching existing Lunch Money transaction across your categories, and attaches the receipt image. Lunch Money sync requires the paid Pro plan. - (by Pine River Labs)
+  * [Website](https://receiptrabbit.io)
 <!-- GENERATED:CATALOG:END -->
