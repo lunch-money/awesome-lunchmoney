@@ -564,3 +564,13 @@
       url: https://zapier.com/apps/lunch-money/integrations
       url_label: "Zapier"
       spotlight: /blog/lunch-money-is-now-on-zapier
+
+    - name: Receipt Rabbit
+      description: An iPhone receipt scanner that categorizes each line item, splits the matching existing Lunch Money transaction across your categories, and attaches the receipt image. Lunch Money sync requires the paid Pro plan.
+      author: Pine River Labs
+      lang: ios
+      url: https://apps.apple.com/us/app/receipt-rabbit-expense-tracker/id6789563930
+      url_label: "App Store"
+      links:
+        - url: https://receiptrabbit.io
+          label: "Website"
