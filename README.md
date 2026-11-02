@@ -185,6 +185,8 @@ Visualize and forecast your Lunch Money cash flow to plan ahead.
   * [Spotlight Blog](https://lunchmoney.app/blog/2025-09-11-community-newsletter)
 * [Meal Ticket](https://github.com/varontron/meal-ticket) - A web app for tracking Lunch Money cash flow. - (by varontron)
   * [Try it](https://mealticket.varontron.com/meal-ticket-sigma.vercel.app)
+* [Mizan](https://github.com/TechnoDudeX/lunchmoney-zakat) - A zakat calculator for your Lunch Money balances, with live gold and silver prices, a silver or gold nisab, mortgage deduction methods and a hawl check from month-end balances. Read-only, and runs in your browser. - (by Mazin Kanuga)
+  * [Try it](https://lunchmoney-zakat.netlify.app)
 
 ## Extensions & Keyboard Shortcuts
 
