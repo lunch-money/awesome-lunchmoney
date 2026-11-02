@@ -505,6 +505,15 @@
       url: https://mealticket.varontron.com/meal-ticket-sigma.vercel.app
       url_label: "Try it"
 
+    - name: Mizan
+      description: A zakat calculator for your Lunch Money balances, with live gold and silver prices, a silver or gold nisab, mortgage deduction methods and a hawl check from month-end balances. Read-only, and runs in your browser.
+      author: Mazin Kanuga
+      lang: web
+      lang_label: Web App
+      github: https://github.com/TechnoDudeX/lunchmoney-zakat
+      url: https://lunchmoney-zakat.netlify.app
+      url_label: "Try it"
+
 - id: extensions
   icon: "⚡"
   title: Extensions & Keyboard Shortcuts
