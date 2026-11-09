@@ -272,6 +272,11 @@
     author: Michael Bianco
     lang: python
     github: https://github.com/iloveitaly/lunchmoney-transaction-enhancer
+  - name: lunchmoney-privacy-sync
+    description: Replace generic "PRIVACY*" payees with the real merchant name from Privacy.com virtual card transactions.
+    author: Jason York
+    lang: ruby
+    github: https://github.com/jasonyork/lunchmoney-privacy-sync
 - id: notifications
   icon: 🔔
   title: Notifiers & Bots
