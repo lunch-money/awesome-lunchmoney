@@ -583,3 +583,13 @@
       links:
         - url: https://receiptrabbit.io
           label: "Website"
+
+    - name: WalletFeed
+      description: An iPhone app that reads Apple Card, Apple Cash and Savings transactions from Apple Wallet through FinanceKit and sends new and changed ones to a Lunch Money manual account with the v2 API. It needs no account, and the API token stays in the iPhone Keychain. US only, iOS 26 or later. Lunch Money sync is part of WalletFeed Pro, a paid subscription or one-time Lifetime purchase.
+      author: Phillip Harrison
+      lang: ios
+      url: https://apps.apple.com/us/app/walletfeed/id6827429675
+      url_label: "App Store"
+      links:
+        - url: https://walletfeed.app/guides/apple-card-to-lunch-money/
+          label: "Setup guide"
