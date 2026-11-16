@@ -145,6 +145,7 @@ Automatically categorize, enrich, and manage your existing Lunch Money transacti
 * [email-to-lunch-money](https://github.com/evanpurkhiser/email-to-lunchmoney/) - Track email receipts for Amazon, Lyft and others to update Lunch Money transactions. - (by Evan)
   * [Spotlight Blog](https://lunchmoney.app/blog/2026-04-14-community-newsletter)
 * [lunchmoney-transaction-enhancer](https://github.com/iloveitaly/lunchmoney-transaction-enhancer) - Enrich Lunch Money transactions using regex extraction rules. - (by Michael Bianco)
+* [lunchmoney-privacy-sync](https://github.com/jasonyork/lunchmoney-privacy-sync) - Replace generic "PRIVACY*" payees with the real merchant name from Privacy.com virtual card transactions. - (by Jason York)
 
 ## Notifiers & Bots
 
